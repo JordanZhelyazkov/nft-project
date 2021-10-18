@@ -1,7 +1,7 @@
 import Logo from '../logo/Logo';
 import Container from "@mui/material/Container";
 import classNames from "classnames";
-import styles from "../example/Header.module.scss";
+import styles from "./Header.module.scss";
 import Grid from '@mui/material/Grid';
 import SearchSharpIcon from '@mui/icons-material/SearchSharp';
 import { TextField } from '@mui/material';
