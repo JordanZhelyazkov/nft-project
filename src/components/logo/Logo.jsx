@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 
-const Logo = (prop) => {
-   const defaultLogo = "./images/logo.svg";
-   const mutedLogo = "./images/logo-muted.svg";
+export default function Logo(prop) {
+   const defaultLogo = "../images/logo.svg";
+   const mutedLogo = "../images/logo-muted.svg";
    const [isMuted, setImg] = useState('');
    useEffect(() => {
     if(prop.type === 'muted'){
@@ -16,4 +16,3 @@ const Logo = (prop) => {
         <img defaultValue={mutedLogo} src={isMuted}></img>
     )
 }
-export default Logo

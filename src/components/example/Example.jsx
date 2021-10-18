@@ -3,17 +3,20 @@ import Container from "@mui/material/Container";
 import Link from "../link/Link";
 import styles from "./Example.module.scss";
 import classNames from "classnames";
-import Logo from '../Logo';
+import Logo from '../logo/Logo';
 
 export default function Copyright() {
   return (
+    
     <div className={classNames(styles.wrapper)}>
+      <Logo type='default'/>
       <Container className={classNames(styles.container)} maxWidth="xl">
+      
         <Paper className={classNames(styles.paper)}>
+        
           <Link href="/about" color="secondary">
-            <Logo type='default' />
-            Hi, 
-            https://github.com/JordanZhelyazkov/nft-project.git
+          
+            Hi
           </Link>
         </Paper>
       </Container>
