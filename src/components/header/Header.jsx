@@ -1,40 +1,39 @@
-import Logo from '../logo/Logo';
+import Logo from "../logo/Logo";
 import Container from "@mui/material/Container";
 import classNames from "classnames";
 import styles from "./Header.module.scss";
 import Grid from '@mui/material/Grid';
-import SearchSharpIcon from '@mui/icons-material/SearchSharp';
-import { IconButton, TextField } from '@mui/material';
-
+import Item from '@mui/material/ListItemAvatar';
+import { IconButton, TextField } from "@mui/material";
+import SearchIcon from '@mui/icons-material/Search';
 
 
 export default function Header() {
-    
-    return (
-        <div className={classNames(styles.wrapper)}>
-        <Logo type='default'/>
-        <TextField  type="search" placeholder="Find items, users and activities" 
+  return (
+    <div className={classNames(styles.wrapper,styles.container)} >
+      <Logo type="default" />
+      <TextField 
+        type="search"
+        placeholder="Find items, users and activities"
+        style={{width: '80%'}}
         InputProps={{
-     endAdornment: (
-    <IconButton >
-    <SearchSharpIcon style={{color: 'white'}}  />
-    </IconButton>
-    ) } } />
-        <Grid container
-     direction="row"
-     justifyContent="flex-end"
-     alignItems="center"
-        >
-            <Grid item xs>
-            Home
-            </Grid>
-            <Grid item xs>
-            Activity
-            </Grid>
-            <Grid item xs>
-            EXPLORE
-            </Grid>
-        </Grid>
+          startAdornment: (
+            <IconButton>
+              <SearchIcon style={{ color: "white" }} />
+            </IconButton>
+          ),
+        }}
+      />
+      <Grid 
+        container
+        spacing={2}
+        rowGap='2rem'
+      >
+        <Grid item><Item>Home</Item></Grid>
+        <Grid item><Item>Activity</Item></Grid>
+        <Grid item><Item>EXPLORE</Item></Grid>
+      </Grid>
     </div>
-    )
+  );
 }
+

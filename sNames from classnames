@@ -1,0 +1,59 @@
+[33mcommit 49e0f2c0947b6298a0ed3898592f87e7648668e3[m[33m ([m[1;36mHEAD -> [m[1;32mdev[m[33m, [m[1;31morigin/dev[m[33m)[m
+Author: Jordan <jordanasenovzhelyazkov@gmail.com>
+Date:   Tue Oct 19 13:48:30 2021 +0300
+
+    fixes
+
+[33mcommit 1e8f4a39f7db44236d0ba31b207e7669f9dd4cb3[m
+Author: Jordan <jordanasenovzhelyazkov@gmail.com>
+Date:   Mon Oct 18 19:35:54 2021 +0300
+
+    header fixes
+
+[33mcommit 775c17a6ae6fcd457fce7a5ce655744c3cc9d415[m
+Author: Jordan <jordanasenovzhelyazkov@gmail.com>
+Date:   Mon Oct 18 19:21:38 2021 +0300
+
+    fixes
+
+[33mcommit e5352b2fa2c1e271d2c002379ae71f6654021122[m
+Author: Jordan <jordanasenovzhelyazkov@gmail.com>
+Date:   Mon Oct 18 19:12:47 2021 +0300
+
+    some fixes
+
+[33mcommit a95598e8e77ec7aedb396a07c2fcc5380ddf9037[m
+Author: Jordan <jordanasenovzhelyazkov@gmail.com>
+Date:   Mon Oct 18 16:19:15 2021 +0300
+
+    fixes header
+
+[33mcommit bcb98d2eed457b4e162273dd4d0c9b86e98ab009[m
+Author: Jordan <jordanasenovzhelyazkov@gmail.com>
+Date:   Mon Oct 18 12:00:39 2021 +0300
+
+    fixes
+
+[33mcommit df563d2345db4b0c72b160e9605b45303d00d724[m
+Author: Jordan <jordanasenovzhelyazkov@gmail.com>
+Date:   Mon Oct 18 11:25:56 2021 +0300
+
+    fixes logo
+
+[33mcommit e43e09b7ebe32019040b1fc85d46fe87253eb55a[m
+Author: Jordan <jordanasenovzhelyazkov@gmail.com>
+Date:   Mon Oct 18 10:53:42 2021 +0300
+
+    adding a logo
+
+[33mcommit bbc4bbe0545ad5d54b1031144bb689cf4b9778b0[m
+Author: Jordan <jordanasenovzhelyazkov@gmail.com>
+Date:   Mon Oct 18 08:22:41 2021 +0300
+
+    'some fixes'
+
+[33mcommit 8f75a3c7687783a1dd9e84baec1159d5f8936d56[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmaster[m[33m)[m
+Author: Hristiyan Ivanov <civanov.me@gmail.com>
+Date:   Mon Oct 11 13:45:31 2021 +0300
+
+    feat: add initial commit

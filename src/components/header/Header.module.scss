@@ -1,12 +1,7 @@
 @use "../../styles/colors";
 
 .wrapper {
-  padding: 100px;
-  display: flex;
-  row-gap: 5vw;
-  max-width: max-content;
-  background-color: #0c0c14;
-  
+  background-color: colors.$background_default;
 }
 
 .container {
@@ -23,4 +18,3 @@
   top: 180px;
   text-align: center;
 }
-    
