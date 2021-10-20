@@ -4,19 +4,24 @@ import Link from "../link/Link";
 import styles from "./Example.module.scss";
 import classNames from 'classnames';
 import Header from "../header/Header";
+import Avatar from "../avatar/Avatar";
+
+
+
 
 export default function Copyright() {
   return (
     
     <div className={classNames(styles.wrapper)}>
       <Header />
+      <Avatar size={90} url="/images/avatar.png" verified={false}/>
       <Container className={classNames(styles.container)} maxWidth="xl">
+      
 
         <Paper className={classNames(styles.paper)}>
        
           <Link href="/about" color="secondary">
           
-            Hi
           </Link>
         </Paper>
       </Container>
