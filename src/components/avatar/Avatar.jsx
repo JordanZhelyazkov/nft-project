@@ -4,7 +4,7 @@ import VerifiedIcon from '@mui/icons-material/Verified';
 import { useState, useEffect } from 'react';
 
 
-export default function Avatar({url, size = 90, verified = false}) {
+export default function Avatar({size = 90, url, verified = false}) {
 // const [isVerified, setVerified] = useState('');
 
 // useEffect(() => {
@@ -14,7 +14,7 @@ export default function Avatar({url, size = 90, verified = false}) {
 // }, [isVerified])
 const isVerified = () => {
     if(verified){
-        const ver = <div><VerifiedIcon/></div>
+        const ver = <VerifiedIcon/>
         return ver;
     } 
 }
@@ -22,7 +22,7 @@ const isVerified = () => {
 return (
   <div className="avatar"  style={{width: size + 'px', height: size + 'px'}} > 
       <img className="image"  style={{width: "100%", justifyContent: 'center'}} src={url}></img>
-      {isVerified()}
+      <div className='badge'>{isVerified()}</div>
   </div>
 )
 }
