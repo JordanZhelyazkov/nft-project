@@ -5,18 +5,24 @@ import { useState, useEffect } from 'react';
 
 
 export default function Avatar({url, size = 90, verified = false}) {
-const [isVerified, setVerified] = useState('');
+// const [isVerified, setVerified] = useState('');
 
-useEffect(() => {
+// useEffect(() => {
+//     if(verified){
+//         setVerified(<div><VerifiedIcon/></div>)
+//     } 
+// }, [isVerified])
+const isVerified = () => {
     if(verified){
-        setVerified(<div><VerifiedIcon/></div>)
+        const ver = <div><VerifiedIcon/></div>
+        return ver;
     } 
-}, [isVerified])
+}
 
 return (
   <div className="avatar"  style={{width: size + 'px', height: size + 'px'}} > 
       <img className="image"  style={{width: "100%", justifyContent: 'center'}} src={url}></img>
-      {isVerified} 
+      {isVerified()}
   </div>
 )
 }
