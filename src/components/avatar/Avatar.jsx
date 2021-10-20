@@ -22,12 +22,12 @@ export default function Avatar({size = 90, url, verified = false}) {
 
 return (
   <div className="avatar"  style={{width: size + 'px', height: size + 'px'}} > 
-    <img className="image"  style={{width: "100%", justifyContent: 'center'}} src={url}></img>
-        <Badge className='badge'
-        style={{display: `${verified ? 'block' : 'none'}`}}
-        >
+    
+        <Badge className='badge'>
+        <img className="image"  style={{width: "100%", justifyContent: 'center'}} src={url}></img>
         <img  src="/images/verified.svg" style={{display: `${verified ? 'block' : 'none'}`}}></img>
         </Badge>
   </div>
 )
 }
+// style={{display: `${verified ? 'block' : 'none'}`}}
