@@ -1,15 +1,28 @@
 import styles from './Avatar.module.scss';
-import { Badge } from '@mui/icons-material';
 import classNames from 'classnames';
+import VerifiedIcon from '@mui/icons-material/Verified';
+import { useState, useEffect } from 'react';
 
-import { useEffect, useState } from 'react';
-export default function Avatar({url, size = 90, verified = false}) {
 
-const badge = '/images/verified.svg';
+export default function Avatar({url, size = 90, verified = "false"}) {
+const [isVerified, setVerified] = useState('');
+
+useEffect(() => {
+    if(verified){
+        setVerified(<div><VerifiedIcon/></div>)
+    } 
+}, [verified])
+
 return (
-  <div className="avatar"  style={{width: size + 'px', height: size + 'px'}} >
-      <img className="image" style={{width: "100%", justifyContent: 'center'}} src={url}></img>
-      <Badge className="badge" >{`${verified === true ? badge : ''}`}</Badge>
+  <div className="avatar"  style={{width: size + 'px', height: size + 'px'}} > 
+  
+      <img className="image"  style={{width: "100%", justifyContent: 'center'}} src={url}></img>
+      {isVerified}
+      
+      
+      
+      
   </div>
 )
 }
+// 
