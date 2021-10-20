@@ -14,9 +14,9 @@ export default function Copyright() {
     
     <div className={classNames(styles.wrapper)}>
       <Header />
-      <Avatar  url="/images/avatar.png" size={90} verified={false}/>
-      <Container className={classNames(styles.container)} maxWidth="xl">
       
+      <Container className={classNames(styles.container)} maxWidth="xl">
+      <Avatar  url="/images/avatar.png" size={90} verified={false}/>
 
         <Paper className={classNames(styles.paper)}>
        

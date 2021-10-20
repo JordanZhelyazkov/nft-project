@@ -7,10 +7,15 @@ export default function Avatar({url, size, verified}) {
 
 const badge = '/images/verified.svg';
 return (
-  <div className="avatar"  width={size + 'px'} height={size + 'px'}>
-      <img className="image" src={url}></img>
+  <div className="avatar"  style={{width: size + 'px', height: size + 'px'}} >
+      <img className="image" style={{width: "100%", justifyContent: 'center'}} src={url}></img>
       <Badge className="badge" src={`${verified === true ? badge : ''}`}></Badge>
   </div>
 )
 
+}
+
+Avatar.defaultProps = {
+    size: "90",
+    verified: true
 }
