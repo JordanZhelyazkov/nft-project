@@ -16,7 +16,7 @@ export default function Copyright() {
       <Header />
       
       <Container className={classNames(styles.container)} maxWidth="xl">
-      <Avatar  size={90} url="/images/avatar.png" verified={true}/>
+      <Avatar url="/images/avatar.png"/>
 
         <Paper className={classNames(styles.paper)}>
        

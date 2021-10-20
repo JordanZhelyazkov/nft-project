@@ -4,7 +4,7 @@ import classNames from 'classnames';
 import Badge from '@mui/material/Badge';
 
 
-export default function Avatar({size = 90, url, verified = false}) {
+export default function Avatar({size = 90, url, verified = true}) {
 // const [isVerified, setVerified] = useState('');
 
 // useEffect(() => {
