@@ -1,15 +1,15 @@
 @use "../../styles/colors";
 
-.name {
+p.name {
 font-size: 1rem;
 color: colors.$text_secondary
 }
 
-.info {
+p.info {
 font-size: 1rem;
 color:  colors.$secondary_main;
 }
 
-.user {
+div.user {
     background-color: colors.$primary_main;
 }
