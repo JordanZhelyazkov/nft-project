@@ -1,9 +1,15 @@
+@use "../../styles/colors";
+
 .name {
 font-size: 1rem;
-color: #ffffff;
+color: colors.$text_secondary
 }
 
 .info {
 font-size: 1rem;
-color:#24f25e;
+color:  colors.$secondary_main;
+}
+
+.user {
+    background-color: colors.$primary_main;
 }
