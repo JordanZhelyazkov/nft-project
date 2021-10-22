@@ -6,6 +6,7 @@ import classNames from 'classnames';
 import Header from "../header/Header";
 import User from "../user/User";
 import Avatar from "../avatar/Avatar";
+import Card from "../card/Card";
 
 
 
@@ -17,6 +18,7 @@ export default function Copyright() {
       <Header />
       <Avatar url='../images/avatar.png'/>
       <User/>
+      <Card />
       <Container className={classNames(styles.container)} maxWidth="xl">
       
 
