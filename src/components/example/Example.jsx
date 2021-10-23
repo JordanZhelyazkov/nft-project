@@ -7,6 +7,7 @@ import Header from "../header/Header";
 import User from "../user/User";
 import Avatar from "../avatar/Avatar";
 import Card from "../card/Card";
+import { boolean } from "mathjs";
 
 
 
@@ -16,9 +17,9 @@ export default function Copyright() {
     
     <div className={classNames(styles.wrapper)}>
       <Header />
-      <Avatar url='../images/avatar.png'/>
+      <Avatar url={'../images/avatar.png'}/>
       <User/>
-      <Card />
+      <Card name="Gorcho" likes={65624646} mediaUrl="../images/nft.jpg" avatarUrl="../images/avatar.png" verified={true} price="64731" currency="BGN"/>
       <Container className={classNames(styles.container)} maxWidth="xl">
       
 
