@@ -3,7 +3,7 @@ import { Chip } from "@mui/material";
 import Avatar from "../avatar/Avatar";
 import User from "../user/User";
 import millify from "millify";
-export default function Card({name="", likes=0, mediaUrl="", price="", currency=""}) {
+export default function Card({name="", likes=0, mediaUrl="",avatarUrl="", verified=false, price="", currency=""}) {
   
     
     return (
