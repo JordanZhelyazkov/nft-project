@@ -2,11 +2,11 @@ import { Chip } from "@mui/material";
 import Avatar from "../avatar/Avatar";
 import millify from "millify";
 import "./Card.module.scss";
-import User from "../user/User";
+
 
 export default function Card({
   name,
-  likes = 56553,
+  likes = 0,
   mediaUrl,
   avatarUrl,
   verified,
@@ -14,13 +14,13 @@ export default function Card({
   currency,
 }) {
   return (
-    <div className="card">
-        <Avatar url={avatarUrl} verified={true}/>
-        <img src={mediaUrl} className="media"/>
+    <div className="card" style={{backgroundColor: "#181828", width: "310px"}}>
+        <Avatar url={avatarUrl} verified="true"/>
+        <img style={{borderRadius: "30px", backgroundColor: 'black'}} src={mediaUrl} className="media"/>
         <h3 className='title'>{name}</h3>
         <p className='price'>{price} {currency}</p>
-        <button className="likes">
-          <Chip label={millify(likes)}></Chip>
+        <button  className="likes" style={{position: "relative"}}>
+          <Chip label={millify(likes)}>{millify(likes)}</Chip>
         </button>
     </div>
   );

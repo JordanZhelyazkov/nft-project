@@ -20,9 +20,10 @@ export default function Copyright() {
       
       <User/>
       
+      <Card name="Gorcho"  mediaUrl="../images/nft.jpg" avatarUrl="../images/avatar.png" verified={false} price="6" currency="ETH"/>
       <Container className={classNames(styles.container)} maxWidth="xl">
       
-      <Card name="Gorcho"  mediaUrl="../images/nft.jpg" avatarUrl="../images/avatar.png" verified={false} price="64731" currency="ETH"/>
+      
         <Paper className={classNames(styles.paper)}>
        
           <Link href="/about" color="secondary">
