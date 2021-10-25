@@ -19,7 +19,7 @@ export default function Copyright() {
       <Header />
       <Avatar url={'../images/avatar.png'}/>
       <User/>
-      <Card name="Gorcho" likes={65624646} mediaUrl="../images/nft.jpg" avatarUrl="../images/avatar.png" verified={true} price="64731" currency="BGN"/>
+      <Card name="Gorcho" likes={65} mediaUrl="../images/nft.jpg" avatarUrl="../images/avatar.png" verified={true} price="64731" currency="BGN"/>
       <Container className={classNames(styles.container)} maxWidth="xl">
       
 
