@@ -8,21 +8,13 @@ import User from "../user/User";
 import Avatar from "../avatar/Avatar";
 import Card from "../card/Card";
 
-
-
-
-
 export default function Copyright() {
   return (
     
     <div className={classNames(styles.wrapper)}>
       <Header />
-      
-      <User/>
-      
-      <Card name="Gorcho"  mediaUrl="../images/nft.jpg" avatarUrl="../images/avatar.png" verified={false} price="6" currency="ETH"/>
+      <Card name="Gorcho"  user={{avatarUrl:"../images/avatar.png", verified:'true'}} mediaUrl="../images/nft.jpg" price="6" currency="ETH"/>
       <Container className={classNames(styles.container)} maxWidth="xl">
-      
       
         <Paper className={classNames(styles.paper)}>
        

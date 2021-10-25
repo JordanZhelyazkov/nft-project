@@ -1,27 +1,28 @@
 import { Chip } from "@mui/material";
 import Avatar from "../avatar/Avatar";
 import millify from "millify";
-import "./Card.module.scss";
-
-
-export default function Card({
+import classNames from 'classnames';
+import styles from"./Card.module.scss";
+import { Card,CardHeader } from "@mui/material";
+export default function CardComponent({
   name,
-  likes = 0,
+  likes = 1000,
   mediaUrl,
-  avatarUrl,
-  verified,
+  user= { avatarUrl, verified },
   price,
   currency,
 }) {
   return (
-    <div className="card" style={{backgroundColor: "#181828", width: "310px"}}>
-        <Avatar url={avatarUrl} verified="true"/>
-        <img style={{borderRadius: "30px", backgroundColor: 'black'}} src={mediaUrl} className="media"/>
-        <h3 className='title'>{name}</h3>
-        <p className='price'>{price} {currency}</p>
-        <button  className="likes" style={{position: "relative"}}>
-          <Chip label={millify(likes)}>{millify(likes)}</Chip>
-        </button>
-    </div>
+    <Card className="card">
+          <Avatar
+            alt="Remy Sharp"
+            url={user.avatarUrl}
+            verified={user.verified}
+          ></Avatar>
+        <img src={mediaUrl} className={classNames(styles.media)}></img>
+        <h3 className="title">{name}</h3>
+        <p className="price">{price}{currency}</p>
+        <Chip className="likes" label={millify(likes)} variant="outlined" />
+    </Card>
   );
 }
