@@ -17,12 +17,12 @@ export default function Copyright() {
     
     <div className={classNames(styles.wrapper)}>
       <Header />
-      <Avatar url={'../images/avatar.png'}/>
+      
       <User/>
       
       <Container className={classNames(styles.container)} maxWidth="xl">
       
-      <Card name="Gorcho"  mediaUrl="../images/nft.jpg" avatarUrl="../images/avatar.png" verified={true} price="64731" currency="ETH"/>
+      <Card name="Gorcho"  mediaUrl="../images/nft.jpg" avatarUrl="../images/avatar.png" verified={false} price="64731" currency="ETH"/>
         <Paper className={classNames(styles.paper)}>
        
           <Link href="/about" color="secondary">
