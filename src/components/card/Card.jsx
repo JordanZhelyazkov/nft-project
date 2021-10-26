@@ -3,7 +3,7 @@ import Avatar from "../avatar/Avatar";
 import millify from "millify";
 import classNames from 'classnames';
 import styles from"./Card.module.scss";
-import { Card,CardHeader } from "@mui/material";
+import { Card } from "@mui/material";
 export default function CardComponent({
   name,
   likes = 1000,
@@ -13,16 +13,15 @@ export default function CardComponent({
   currency,
 }) {
   return (
-    <Card className="card">
+    <Card className={classNames(styles.card, styles.container)}>
           <Avatar
-            alt="Remy Sharp"
             url={user.avatarUrl}
             verified={user.verified}
           ></Avatar>
         <img src={mediaUrl} className={classNames(styles.media)}></img>
         <h3 className="title">{name}</h3>
-        <p className="price">{price}{currency}</p>
-        <Chip className="likes" label={millify(likes)} variant="outlined" />
+        <p className={classNames(styles.price)}>{price} {currency}</p>
+        <Chip  className={classNames(styles.likes)} label={millify(likes)} variant="outlined" />
     </Card>
   );
 }

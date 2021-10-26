@@ -1,4 +1,12 @@
-
+@use "../../styles/colors";
 .media {
     border-radius: 30%;
+}
+
+.price {
+color: colors.$text_secondary;
+}
+
+.likes {
+    color: colors.$text_secondary;
 }
