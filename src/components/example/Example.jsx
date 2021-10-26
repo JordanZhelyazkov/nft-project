@@ -13,7 +13,7 @@ export default function Copyright() {
     
     <div className={classNames(styles.wrapper)}>
       <Header />
-      <Card name="Gorcho"  user={{avatarUrl:"../images/avatar.png", verified:'true'}} mediaUrl="../images/nft.jpg" price="6" currency="ETH"/>
+      <Card name="Gorcho"  mediaUrl="../images/nft.jpg" user={{avatarUrl:"../images/avatar.png", verified:'true'}}  price="0" currency="ETH"/>
       <Container className={classNames(styles.container)} maxWidth="xl">
       
         <Paper className={classNames(styles.paper)}>
