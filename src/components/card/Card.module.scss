@@ -5,19 +5,26 @@
 
 .card {
     background-color: colors.$background_paper;
+    height: 50%;
+    width: 20%;
+   
+    
 }
 
 .price {
     color: colors.$info_main;
+   
+    
 }
 
 .likes {
     color: colors.$info_main;
-    position: relative;
-    left: 290px;
-    margin-bottom: 60px;
+    float: right;
+   
 }
 
 .title {
     color: colors.$text_primary;
+    
+    
 }
