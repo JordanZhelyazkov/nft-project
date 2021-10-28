@@ -11,7 +11,34 @@ export default function Copyright() {
     
     <div className={classNames(styles.wrapper)}>
       <Header />
-      <Trending />
+      <Trending cards={[{
+    name: "Ivy",
+    user: {avatarUrl: './images/avatar.png', verified: true},
+    mediaUrl: './images/nft.jpg',
+    price: 1,
+    currency: 'ETH',
+},
+{
+  name: "pe6o",
+  user: {avatarUrl: './images/avatar.png', verified: true},
+  mediaUrl: './images/nft.jpg',
+  price: 1,
+  currency: 'ETH',
+},
+{
+  name: "go6o",
+  user: {avatarUrl: './images/avatar.png', verified: true},
+  mediaUrl: './images/nft.jpg',
+  price: 1,
+  currency: 'ETH',
+},
+{
+  name: "Ivan",
+  user: {avatarUrl: './images/avatar.png', verified: true},
+  mediaUrl: './images/nft.jpg',
+  price: 1,
+  currency: 'ETH',
+}]}/>
       <Container className={classNames(styles.container)} maxWidth="xl">
       
         <Paper className={classNames(styles.paper)}>
