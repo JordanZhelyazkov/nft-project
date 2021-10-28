@@ -9,6 +9,7 @@ import Avatar from "../avatar/Avatar";
 import { useState } from "react";
 
 
+export default function Trending(cards = []){
 
 
 
