@@ -6,7 +6,7 @@ import classNames from 'classnames';
 import styles from"./Card.module.scss";
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
-import { CardHeader } from "@mui/material";
+import CardHeader from "@mui/material";
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 
@@ -43,9 +43,6 @@ export default function Card({
       <CardActions>
         <Chip label={millify(likes)} variant="outlined" className={classNames(styles.likes)} ></Chip>
       </CardActions>
-
-        {/* <Chip className={classNames(styles.likes)} label={millify(likes)} variant="outlined" /> */}
-    {/* </Card> */}
     </MuiCard>
   );
 }
