@@ -9,7 +9,7 @@ import Avatar from "../avatar/Avatar";
 import { useState } from "react";
 
 
-export default function Trending(...props){
+export default function Trending(cards = []){
 
     const [period, setPeriod] = useState('');
 
@@ -36,16 +36,16 @@ export default function Trending(...props){
         // rowGap='2rem'
       >
         <Grid item xs={2}>
-        <Card name={props[0].name} mediaUrl={props[0].mediaUrl} user={props[0].avatarUrl, props[0].verified}  price={props[0].price} currency={props[0].currency}/>
+        <Card name={cards[0].name} mediaUrl={cards[0].mediaUrl} user={cards[0].avatarUrl, cards[0].verified}  price={cards[0].price} currency={cards[0].currency}/>
         </Grid>
          <Grid item>
-        <Card name={props[1].name} mediaUrl={props[1].mediaUrl} user={props[1].avatarUrl, props[1].verified}  price={props[1].price} currency={props[1].currency}/>
+        <Card name={cards[1].name} mediaUrl={cards[1].mediaUrl} user={cards[1].avatarUrl, cards[1].verified}  price={cards[1].price} currency={cards[1].currency}/>
             </Grid>
         <Grid item>
-        <Card name={props[2].name} mediaUrl={props[2].mediaUrl} user={props[2].avatarUrl, props[2].verified}  price={props[2].price} currency={props[2].currency}/>
+        <Card name={cards[2].name} mediaUrl={cards[2].mediaUrl} user={cards[2].avatarUrl, cards[2].verified}  price={cards[2].price} currency={cards[2].currency}/>
             </Grid>
         <Grid item>
-        <Card name={props[3].name} mediaUrl={props[3].mediaUrl} user={props[3].avatarUrl, props[3].verified}  price={props[3].price} currency={props[3].currency}/>
+        <Card name={cards[3].name} mediaUrl={cards[3].mediaUrl} user={cards[3].avatarUrl, cards[3].verified}  price={cards[3].price} currency={cards[3].currency}/>
             </Grid> 
       </Grid> 
       </Container>
