@@ -14,7 +14,7 @@ export default function Card({
   name,
   likes = 0,
   mediaUrl,
-  user = { avatarUrl, verified },
+  user = {avatarUrl, verified},
   price,
   currency,
 }) {

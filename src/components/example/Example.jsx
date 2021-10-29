@@ -11,7 +11,7 @@ export default function Copyright() {
     
     <div className={classNames(styles.wrapper)}>
       <Header />
-      <Trending />
+      <Trending cards={[]}/>
       <Container className={classNames(styles.container)} maxWidth="xl">
       
         <Paper className={classNames(styles.paper)}>
