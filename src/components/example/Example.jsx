@@ -24,31 +24,7 @@ export default function Copyright() {
     </div>
   );
 }
-// cards={[{
-//   name: "Ivy",
-//   user: {avatarUrl: './images/avatar.png', verified: true},
-//   mediaUrl: './images/nft.jpg',
-//   price: 1,
-//   currency: 'ETH',
-// },
-// {
-// name: "pe6o",
-// user: {avatarUrl: './images/avatar.png', verified: true},
-// mediaUrl: './images/nft.jpg',
-// price: 1,
-// currency: 'ETH',
-// },
-// {
-// name: "go6o",
-// user: {avatarUrl: './images/avatar.png', verified: true},
-// mediaUrl: './images/nft.jpg',
-// price: 1,
-// currency: 'ETH',
-// },
-// {
-// name: "Ivan",
-// user: {avatarUrl: './images/avatar.png', verified: true},
-// mediaUrl: './images/nft.jpg',
-// price: 1,
-// currency: 'ETH',
-// }]}
+// {name: "Ivu", user: {avatarUrl: 'images/avatar.png', verified: true}, mediaUrl: "images/nft.jpg", price: 1, currency: "ETH"},
+//     {name: "Go6o", user: {avatarUrl: 'images/avatar.png', verified: true}, mediaUrl: "images/nft.jpg", price: 1, currency: "ETH"},
+//     {name: "Ivan", user: {avatarUrl: 'images/avatar.png', verified: true}, mediaUrl: "images/nft.jpg", price: 1, currency: "ETH"},
+//     {name: "Petko", user: {avatarUrl: 'images/avatar.png', verified: true}, mediaUrl: "images/nft.jpg", price: 1, currency: "ETH"}

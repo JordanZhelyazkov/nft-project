@@ -18,7 +18,7 @@ export default function Card(props)
   // price,
   // currency,
  {
-  const {name, likes=0, mediaUrl, user: avatarUrl, user:verified, price, currency} = props;
+  const {name, likes=0, user: avatarUrl, user: verified, mediaUrl,  price, currency} = props;
   return (
   <MuiCard container className={classNames(styles.card, styles.container)}>
     {/* <Card className={classNames(styles.card, styles.container)} sx={{ maxWidth: 345 }}> */}
