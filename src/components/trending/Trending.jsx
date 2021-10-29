@@ -13,13 +13,13 @@ import Item from '@mui/material/ListItemAvatar';
 import { useState } from "react";
 
 
-export default function Trending({cards=[]}){
+
   
 
 
 
 
-export default function Trending(cards=[]){
+export default function Trending({cards=[]}){
 
 
     const [period, setPeriod] = useState('');
