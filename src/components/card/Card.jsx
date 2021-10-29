@@ -1,4 +1,4 @@
-import { Chip } from "@mui/material";
+import Chip from '@mui/material/Chip'
 import Avatar from "../avatar/Avatar";
 import MuiCard from '@mui/material/Card';
 import millify from "millify";
@@ -6,26 +6,27 @@ import classNames from 'classnames';
 import styles from"./Card.module.scss";
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
-import CardHeader from "@mui/material";
+import CardHeader from '@mui/material/CardHeader';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 
-export default function Card({
-  name,
-  likes = 0,
-  mediaUrl,
-  user = {avatarUrl, verified},
-  price,
-  currency,
-}) {
+export default function Card(props)
+  // name,
+  // likes = 0,
+  // mediaUrl,
+  // user = {avatarUrl, verified},
+  // price,
+  // currency,
+ {
+  const {name, likes=0, mediaUrl, user: avatarUrl, user:verified, price, currency} = props;
   return (
   <MuiCard container className={classNames(styles.card, styles.container)}>
     {/* <Card className={classNames(styles.card, styles.container)} sx={{ maxWidth: 345 }}> */}
     <CardHeader
     avatar={
       <Avatar
-            url={user.avatarUrl}
-            verified={user.verified}
+            url={avatarUrl}
+            verified={verified}
           ></Avatar>
     }>
         </CardHeader>

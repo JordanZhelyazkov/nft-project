@@ -27,31 +27,31 @@ export default function Trending(cards=[]){
   };
 
     return(
-      <Container >  
-      <h3>Trending</h3>
-        <Box className="select" sx={{ minWidth: 120, maxWidth: 150, float: "right"}}>
-         <FormControl fullWidth>
-         <InputLabel id="demo-simple-select-label">Age</InputLabel>
-          <Select
-            id="select"
-            value={period}
-            label="Period"
-            onChange={handleChange}>
-          <MenuItem value="This Month">This Month</MenuItem>
-          <MenuItem value="This Week">This Week</MenuItem>
-          <MenuItem value="Today">Today</MenuItem>
-          </Select> 
-          </FormControl>
-     </Box>
-     <div>
-     <Grid container spacing={2}>
-       <Grid item xs={2}><Item><Card cards={cards[0]} /></Item></Grid>
-       <Grid item xs={2}><Item><Card cards={cards[1]} /></Item></Grid>
-       <Grid item xs={2}><Item><Card cards={cards[2]} /></Item></Grid>
-       <Grid item xs={2}><Item><Card cards={cards[3]} /></Item></Grid>
- </Grid>
- </div>
-      </Container>
+     <Container >  
+     <h3>Trending</h3>
+       <Box className="select" sx={{ minWidth: 120, maxWidth: 150, float: "right"}}>
+        <FormControl fullWidth>
+        <InputLabel id="demo-simple-select-label"></InputLabel>
+         <Select
+           id="select"
+           value={period}
+           label="Period"
+           onChange={handleChange}>
+         <MenuItem value="This Month">This Month</MenuItem>
+         <MenuItem value="This Week">This Week</MenuItem>
+         <MenuItem value="Today">Today</MenuItem>
+         </Select> 
+         </FormControl>
+    </Box>
+    
+    <Grid container spacing={2}>
+      <Grid item xs={8}><Item><Card cards={cards[0]} /></Item></Grid>
+      <Grid item xs={2}><Item><Card cards={cards[1]} /></Item></Grid>
+      <Grid item xs={2}><Item><Card cards={cards[2]} /></Item></Grid>
+      <Grid item xs={2}><Item><Card cards={cards[3]} /></Item></Grid>
+</Grid>
+
+     </Container>
     )
 }
 
