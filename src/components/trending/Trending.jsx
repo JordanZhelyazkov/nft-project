@@ -1,11 +1,11 @@
 import Card from "../card/Card";
 import Select from '@mui/material/Select';
+import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import classNames from "classnames";
 import styles from"./Trending.module.scss";
 import MenuItem from '@mui/material/MenuItem';
-import Avatar from "../avatar/Avatar";
 import Box from '@mui/material/Box';
 import FormControl from '@mui/material/FormControl';
 import InputLabel from '@mui/material/InputLabel';
@@ -13,7 +13,8 @@ import Item from '@mui/material/ListItemAvatar';
 import { useState } from "react";
 
 
-export default function Trending(cards = []){
+export default function Trending({cards=[]}){
+  
 
     const [period, setPeriod] = useState('');
 
@@ -23,6 +24,7 @@ export default function Trending(cards = []){
 
     return(
      <Container >  
+       <div>
      <h3>Trending</h3>
        <Box className="select" sx={{ minWidth: 120, maxWidth: 150, float: "right"}}>
         <FormControl fullWidth>
@@ -37,16 +39,23 @@ export default function Trending(cards = []){
          <MenuItem value="Today">Today</MenuItem>
          </Select> 
          </FormControl>
-    </Box>
-    
-    <Grid container spacing={2}>
-      <Grid item xs={8}><Item><Card cards={cards[0]} /></Item></Grid>
-      <Grid item xs={2}><Item><Card cards={cards[1]} /></Item></Grid>
-      <Grid item xs={2}><Item><Card cards={cards[2]} /></Item></Grid>
-      <Grid item xs={2}><Item><Card cards={cards[3]} /></Item></Grid>
+    </Box >
+    </div>
+    <div style={{width: '100%'}}>
+    <Box >
+    <Grid container  className="gridContainer" gap={2} alignItems="center">
+       <Card  />
+       <Card  />  
+       <Card  />  
+       <Card  />  
+      
+  
 </Grid>
-
+</Box>
+</div>
      </Container>
     )
 }
 
+{/* <Grid item  xs="auto" className="item"></Grid> */}
+// name={props.cards[0].name} avatarUrl={props.cards[0].user.avatarUrl} verified={props.cards[0].user.verified} mediaUrl={props.cards[0].mediaUrl} price={props.cards[0].price} currency={props.cards[0].currency}
