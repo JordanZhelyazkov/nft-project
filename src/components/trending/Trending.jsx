@@ -26,7 +26,7 @@ export default function Trending(cards = []){
      <h3>Trending</h3>
        <Box className="select" sx={{ minWidth: 120, maxWidth: 150, float: "right"}}>
         <FormControl fullWidth>
-        <InputLabel id="demo-simple-select-label">Age</InputLabel>
+        <InputLabel id="demo-simple-select-label"></InputLabel>
          <Select
            id="select"
            value={period}
@@ -38,14 +38,14 @@ export default function Trending(cards = []){
          </Select> 
          </FormControl>
     </Box>
-    <div>
+    
     <Grid container spacing={2}>
-      <Grid item xs={2}><Item><Card cards={cards[0]} /></Item></Grid>
+      <Grid item xs={8}><Item><Card cards={cards[0]} /></Item></Grid>
       <Grid item xs={2}><Item><Card cards={cards[1]} /></Item></Grid>
       <Grid item xs={2}><Item><Card cards={cards[2]} /></Item></Grid>
       <Grid item xs={2}><Item><Card cards={cards[3]} /></Item></Grid>
 </Grid>
-</div>
+
      </Container>
     )
 }
