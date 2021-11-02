@@ -23,13 +23,10 @@ export default function Card(props)
  {
   const {name, likes=0, user: avatarUrl, user: verified, mediaUrl,  price, currency, timeLeft} = props;
   const [counter, setCounter] = React.useState(timeLeft);
-  const liveCard = <div className="badge" style={{borderRadius: "50px"}}>
-    <LiveTvIcon />
-    <Countdown date={Date.now() + timeLeft}/>
-    </div>;
+ 
     
   return (
-  <MuiCard container className={classNames(styles.card, styles.container)}>
+  <MuiCard container className={classNames(styles.card, styles.container, styles.badge)}>
     {/* <Card className={classNames(styles.card, styles.container)} sx={{ maxWidth: 345 }}> */}
     <CardHeader
     avatar={
@@ -39,14 +36,17 @@ export default function Card(props)
           ></Avatar>
     }>
         </CardHeader>
+        <Countdown date={Date.now() + timeLeft} >
+        <LiveTvIcon />
         <CardMedia
         
         className={classNames(styles.media)}
         component="img"
         image={mediaUrl}
       >
-      {timeLeft != 0 ? liveCard : ""}
+      
       </CardMedia>
+      </Countdown>
       <CardContent>
         <Typography  className={classNames(styles.title)} gutterBottom variant="h5" component="h5">
           {name}
