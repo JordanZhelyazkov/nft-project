@@ -27,6 +27,8 @@ export default function Trending({cards=[]}){
   const handleChange = (event) => {
     setPeriod(event.target.value);
   };
+  const mappedCards = cards.map(card => <Card name={card.name} avatarUrl={card.user.avatarUrl}
+  verified={card.user.verified} mediaUrl={card.mediaUrl} price={card.price} currency={card.currency}/>)
 
     return(
      <Container >  
@@ -50,10 +52,7 @@ export default function Trending({cards=[]}){
     <div style={{width: '100%'}}>
     <Box >
     <Grid container  className="gridContainer" gap={2} alignItems="center">
-       <Card  />
-       <Card  />  
-       <Card  />  
-       <Card  />  
+      {mappedCards} 
       
   
 </Grid>
