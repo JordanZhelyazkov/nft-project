@@ -11,6 +11,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import Countdown from 'react-countdown';
 import { render } from 'react-dom';
+import LiveTvIcon from '@mui/icons-material/LiveTv';
 
 export default function Card(props)
   // name,
@@ -23,6 +24,7 @@ export default function Card(props)
   const {name, likes=0, user: avatarUrl, user: verified, mediaUrl,  price, currency, timeLeft} = props;
   const [counter, setCounter] = React.useState(timeLeft);
   const liveCard = <div className="badge" style={{borderRadius: "50px"}}>
+    <LiveTvIcon />
     <Countdown date={Date.now() + timeLeft}/>
     </div>;
     
