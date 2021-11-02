@@ -19,7 +19,11 @@ export default function Card(props)
   // price,
   // currency,
  {
-  const {name, likes=0, user: avatarUrl, user: verified, mediaUrl,  price, currency, timeleft} = props;
+  const {name, likes=0, user: avatarUrl, user: verified, mediaUrl,  price, currency, timeLeft} = props;
+  const [counter, setCounter] = React.useState(timeLeft);
+  const liveCard = <div className="badge">
+    <Countdown>{timeLeft}</Countdown>
+    </div>;
   return (
   <MuiCard container className={classNames(styles.card, styles.container)}>
     {/* <Card className={classNames(styles.card, styles.container)} sx={{ maxWidth: 345 }}> */}
@@ -32,10 +36,12 @@ export default function Card(props)
     }>
         </CardHeader>
         <CardMedia
+        
         className={classNames(styles.media)}
         component="img"
         image={mediaUrl}
       />
+      {timeLeft ? liveCard : ""}
       <CardContent>
         <Typography  className={classNames(styles.title)} gutterBottom variant="h5" component="h5">
           {name}
