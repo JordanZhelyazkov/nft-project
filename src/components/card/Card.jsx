@@ -9,6 +9,7 @@ import CardContent from '@mui/material/CardContent';
 import CardHeader from '@mui/material/CardHeader';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
+import Countdown from 'react-countdown';
 
 export default function Card(props)
   // name,
@@ -18,7 +19,7 @@ export default function Card(props)
   // price,
   // currency,
  {
-  const {name, likes=0, user: avatarUrl, user: verified, mediaUrl,  price, currency} = props;
+  const {name, likes=0, user: avatarUrl, user: verified, mediaUrl,  price, currency, timeleft} = props;
   return (
   <MuiCard container className={classNames(styles.card, styles.container)}>
     {/* <Card className={classNames(styles.card, styles.container)} sx={{ maxWidth: 345 }}> */}
