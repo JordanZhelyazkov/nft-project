@@ -22,7 +22,7 @@ export default function Card(props)
  {
   const {name, likes=0, user: avatarUrl, user: verified, mediaUrl,  price, currency, timeLeft} = props;
   const [counter, setCounter] = React.useState(timeLeft);
-  const liveCard = <div className="badge">
+  const liveCard = <div className="badge" style={{borderRadius: "50px"}}>
     <Countdown date={Date.now() + timeLeft}/>
     </div>;
     
