@@ -10,6 +10,7 @@ import CardHeader from '@mui/material/CardHeader';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import Countdown from 'react-countdown';
+import { render } from 'react-dom';
 
 export default function Card(props)
   // name,
@@ -24,6 +25,11 @@ export default function Card(props)
   const liveCard = <div className="badge">
     <Countdown>{timeLeft}</Countdown>
     </div>;
+    const renderer = {
+      hours: '00',
+      minutes: '00',
+      seconds: '00',
+    }
   return (
   <MuiCard container className={classNames(styles.card, styles.container)}>
     {/* <Card className={classNames(styles.card, styles.container)} sx={{ maxWidth: 345 }}> */}
@@ -41,7 +47,7 @@ export default function Card(props)
         component="img"
         image={mediaUrl}
       />
-      {timeLeft ? liveCard : ""}
+      {timeLeft ? <Countdown onStart={renderer} >{timeLeft}</Countdown> : ""}
       <CardContent>
         <Typography  className={classNames(styles.title)} gutterBottom variant="h5" component="h5">
           {name}
