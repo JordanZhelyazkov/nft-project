@@ -9,7 +9,7 @@ import Container from '@mui/material/Container';
 import { useState } from "react";
 import Grid from '@mui/material/Grid';
 import classNames from "classnames";
-import Grid from '@mui/material/Grid';
+
 
 
 export default function Auctions({cards = []}){
