@@ -8,6 +8,8 @@ import styles from"./Auctions.module.scss";
 import Container from '@mui/material/Container';
 import { useState } from "react";
 import Grid from '@mui/material/Grid';
+import { useState } from "react";
+import classNames from "classnames";
 
 export default function Auctions({cards = []}){
 
@@ -22,7 +24,7 @@ export default function Auctions({cards = []}){
         verified={card.user.verified} mediaUrl={card.mediaUrl} price={card.price} currency={card.currency} timeLeft={card.timeLeft}/>)
 
     return (
-        <Container >  
+        <Container className={classNames(styles.container)} maxWidth="xl"> 
         <div>
         <h3>Live auctions</h3>
         <Box className="select" sx={{ minWidth: 120, maxWidth: 150, float: "right"}}>
