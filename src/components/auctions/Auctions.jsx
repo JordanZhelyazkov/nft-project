@@ -7,7 +7,7 @@ import InputLabel from '@mui/material/InputLabel';
 import styles from"./Auctions.module.scss";
 import Container from '@mui/material/Container';
 
-export default function Auction({cards = []}){
+export default function Auctions({cards = []}){
 
     
     const [period, setPeriod] = useState('');

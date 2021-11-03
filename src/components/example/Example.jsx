@@ -5,13 +5,15 @@ import styles from "./Example.module.scss";
 import classNames from 'classnames';
 import Header from "../header/Header";
 import Trending from "../trending/Trending";
+import Auctions from "../auctions/Auctions";
 
 export default function Copyright() {
   return (
     
     <div className={classNames(styles.wrapper)}>
       <Header />
-      <Trending />
+      <Trending cards={[]}/>
+      <Auctions cards={[]}/>
       <Container className={classNames(styles.container)} maxWidth="xl">
       
         <Paper className={classNames(styles.paper)}>
