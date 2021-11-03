@@ -11,7 +11,7 @@ import SearchIcon from '@mui/icons-material/Search';
 export default function Header() {
   return (
     <div className={classNames(styles.wrapper,styles.container)} >
-      <Logo type="default" />
+      <Logo  />
       <TextField 
         type="search"
         placeholder="Find items, users and activities"
