@@ -12,13 +12,7 @@ import classNames from "classnames";
 
 
 
-export default function Auctions({cards = [{
-    name,
-    user : {avatarUrl, verified}, 
-    mediaUrl,  
-    price, 
-    currency, 
-    timeLeft}]}){
+export default function Auctions({cards = []}){
 
     
     const [period, setPeriod] = useState('');
