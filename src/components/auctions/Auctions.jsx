@@ -11,13 +11,7 @@ import classNames from "classnames";
 import Grid from '@mui/material/Grid';
 
 
-export default function Auctions({cards = [{
-    name,
-    user : {avatarUrl, verified}, 
-    mediaUrl,  
-    price, 
-    currency, 
-    timeLeft}]}){
+export default function Auctions({cards = []}){
 
     
     const [period, setPeriod] = useState('');
