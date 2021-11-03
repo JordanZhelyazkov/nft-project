@@ -13,15 +13,15 @@ import Countdown from 'react-countdown';
 import { render } from 'react-dom';
 import LiveTvIcon from '@mui/icons-material/LiveTv';
 
-export default function Card(props)
-  // name,
-  // likes = 0,
-  // mediaUrl,
-  // user = {avatarUrl, verified},
-  // price,
-  // currency,
+export default function Card(name,
+   likes=0, 
+   user = {avatarUrl, verified}, 
+   mediaUrl,  
+   price, 
+   currency, 
+   timeLeft)
+ 
  {
-  const {name, likes=0, user: avatarUrl, user: verified, mediaUrl,  price, currency, timeLeft} = props;
   const timer = <div className="badge">
   <LiveTvIcon />
   <Countdown date={Date.now() + timeLeft} />
@@ -34,8 +34,8 @@ export default function Card(props)
     <CardHeader
     avatar={
       <Avatar
-            url={avatarUrl}
-            verified={verified}
+            url={user.avatarUrl}
+            verified={user.verified}
           ></Avatar>
     }>
         </CardHeader>
@@ -44,9 +44,9 @@ export default function Card(props)
         component="img"
         image={mediaUrl}
       > 
-      {timeLeft ? timer : ""}
-      </CardMedia>
       
+      </CardMedia>
+      {timeLeft ? timer : ""}
       <CardContent>
         <Typography  className={classNames(styles.title)} gutterBottom variant="h5" component="h5">
           {name}
