@@ -11,7 +11,13 @@ import classNames from "classnames";
 import Grid from '@mui/material/Grid';
 
 
-export default function Auctions({cards = []}){
+export default function Auctions(props = [{
+    name,
+    user : {avatarUrl, verified}, 
+    mediaUrl,  
+    price, 
+    currency, 
+    timeLeft}]){
 
     
     const [period, setPeriod] = useState('');
@@ -20,7 +26,7 @@ export default function Auctions({cards = []}){
     setPeriod(event.target.value);
   }; 
 
-    const mappedCards = cards.map(card => <Card name={card.name} avatarUrl={card.user.avatarUrl}
+    const mappedCards = props.cards.map(card => <Card name={card.name} avatarUrl={card.user.avatarUrl}
         verified={card.user.verified} mediaUrl={card.mediaUrl} price={card.price} currency={card.currency} timeLeft={card.timeLeft}/>)
 
     return (
