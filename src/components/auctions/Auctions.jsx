@@ -8,7 +8,6 @@ import styles from"./Auctions.module.scss";
 import Container from '@mui/material/Container';
 import { useState } from "react";
 import Grid from '@mui/material/Grid';
-import { useState } from "react";
 import classNames from "classnames";
 
 export default function Auctions({cards = []}){
