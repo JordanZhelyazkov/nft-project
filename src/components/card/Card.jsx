@@ -10,18 +10,19 @@ import CardHeader from '@mui/material/CardHeader';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import Countdown from 'react-countdown';
-import { render } from 'react-dom';
 import LiveTvIcon from '@mui/icons-material/LiveTv';
 
-export default function Card(name,
+
+export default function Card({
+   name,
    likes=0, 
    user = {avatarUrl, verified}, 
    mediaUrl,  
    price, 
    currency, 
-   timeLeft)
+   timeLeft}) {
  
- {
+ 
   const timer = <div className="badge">
   <LiveTvIcon />
   <Countdown date={Date.now() + timeLeft} />
