@@ -7,6 +7,7 @@ import Header from "../header/Header";
 import Trending from "../trending/Trending";
 import Auctions from "../auctions/Auctions";
 
+
 export default function Copyright() {
   return (
     
@@ -23,10 +24,7 @@ export default function Copyright() {
           </Link>
         </Paper>
       </Container>
+      {/* <Footer type="muted"/> */}
     </div>
   );
 }
-// {name: "Ivu", user: {avatarUrl: 'images/avatar.png', verified: true}, mediaUrl: "images/nft.jpg", price: 1, currency: "ETH"},
-//     {name: "Go6o", user: {avatarUrl: 'images/avatar.png', verified: true}, mediaUrl: "images/nft.jpg", price: 1, currency: "ETH"},
-//     {name: "Ivan", user: {avatarUrl: 'images/avatar.png', verified: true}, mediaUrl: "images/nft.jpg", price: 1, currency: "ETH"},
-//     {name: "Petko", user: {avatarUrl: 'images/avatar.png', verified: true}, mediaUrl: "images/nft.jpg", price: 1, currency: "ETH"}
