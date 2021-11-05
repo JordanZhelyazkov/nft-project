@@ -6,6 +6,7 @@ import classNames from 'classnames';
 import Header from "../header/Header";
 import Trending from "../trending/Trending";
 import Auctions from "../auctions/Auctions";
+import Footer from "../footer/Footer";
 
 
 export default function Copyright() {
@@ -24,7 +25,7 @@ export default function Copyright() {
           </Link>
         </Paper>
       </Container>
-      {/* <Footer type="muted"/> */}
+      <Footer type="muted"/>
     </div>
   );
 }
