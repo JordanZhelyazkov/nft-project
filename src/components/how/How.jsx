@@ -15,9 +15,8 @@ const mappedItems = items.map((it, index) => {
             <Grid item><Item>{description}</Item></Grid>
             <Grid item><Item><button href={link}>Learn more</button></Item></Grid>
         </Grid>
-        <Grid container>
-        <Grid item>{mappedItems}</Grid>
-        </Grid>
+       {mappedItems}
+        
         
     </div>
     )
