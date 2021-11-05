@@ -14,9 +14,10 @@ const mappedItems = items.map((it, index) => {
             <Grid item><Item>{title}</Item></Grid>
             <Grid item><Item>{description}</Item></Grid>
             <Grid item><Item><button href={link}>Learn more</button></Item></Grid>
-            {mappedItems}
         </Grid>
+        <Grid container>
         <Grid item>{mappedItems}</Grid>
+        </Grid>
         
     </div>
     )
