@@ -10,12 +10,12 @@ export default function Footer({type}){
     return (
 <div className={classNames(styles.wrapper, styles.container)}>
  <Logo type={type}/>
- <p style={{paddingLeft: "100px", whiteSpace: "nowrap"}}>BUM All Rights Reserved</p>
  <Grid container style={{justifyContent: "flex-end"}}
         className="gridContainer"
         spacing={2}
         rowGap='3rem'
       >
+        <Grid item><Item>BUM All Rights Reserved</Item></Grid>
         <Grid item><Item>Privacy policy</Item></Grid>
         <Grid item><Item>Cookie policy</Item></Grid>
       </Grid>
