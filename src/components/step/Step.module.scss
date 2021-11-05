@@ -1,0 +1,5 @@
+@use "../../styles/colors";
+
+.step {
+    background-color: rgba($color: colors.$background_paper, $alpha: 0.1)
+}

@@ -7,6 +7,7 @@ import Header from "../header/Header";
 import Trending from "../trending/Trending";
 import Auctions from "../auctions/Auctions";
 import Footer from "../footer/Footer";
+import How from "../how/How";
 
 
 export default function Copyright() {
@@ -16,6 +17,7 @@ export default function Copyright() {
       <Header />
       <Trending cards={[]}/>
       <Auctions cards={[]}/>
+      <How />
       <Container className={classNames(styles.container)} maxWidth="xl">
       
         <Paper className={classNames(styles.paper)}>
