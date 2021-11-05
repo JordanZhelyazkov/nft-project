@@ -20,8 +20,8 @@ export default function Auctions({cards = []}){
     setPeriod(event.target.value);
   }; 
 
-    const mappedCards = cards.map(card => <Card name={card.name} avatarUrl={card.user.avatarUrl}
-        verified={card.user.verified} mediaUrl={card.mediaUrl} price={card.price} currency={card.currency} timeLeft={card.timeLeft}/>)
+    const mappedCards = cards.map(card => <Card name={card.name} user={card.user} 
+      mediaUrl={card.mediaUrl} price={card.price} currency={card.currency} timeLeft={card.timeLeft}/>)
 
     return (
         <Container className={classNames(styles.container)} maxWidth="xl"> 

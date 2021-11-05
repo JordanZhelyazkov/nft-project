@@ -15,6 +15,7 @@ import LiveTvIcon from '@mui/icons-material/LiveTv';
 
 export default function Card({
    name,
+   likes=0,
    user = {avatarUrl, verified}, 
    mediaUrl,  
    price, 
