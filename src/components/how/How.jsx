@@ -5,7 +5,7 @@ import styles from "./How.module.scss";
 
 export default function How({description, title, items=[], link}){
 const mappedItems = items.map((it, index) => {
-    <Grid item><Item><Step number={index} title={it.title} description={it.description}/></Item></Grid>
+    <Step number={index} title={it.title} description={it.description}/>
 })
     return (
     <div>
@@ -16,6 +16,7 @@ const mappedItems = items.map((it, index) => {
             <Grid item><Item><button href={link}>Learn more</button></Item></Grid>
             {mappedItems}
         </Grid>
+        <Grid item>{mappedItems}</Grid>
         
     </div>
     )
