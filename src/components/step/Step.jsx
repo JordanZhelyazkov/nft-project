@@ -8,7 +8,7 @@ export default function Step({number, title, description}){
     return (
     <div className="step" >
         <Grid container>
-            <Grid item><Item>{number}</Item></Grid>
+            <Grid item className="number"><Item>{number}</Item></Grid>
             <Grid item><Item>{title}</Item></Grid>
             <Grid item><Item>{description}</Item></Grid>
         </Grid>
