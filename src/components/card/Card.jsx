@@ -13,13 +13,13 @@ import Countdown from 'react-countdown';
 import LiveTvIcon from '@mui/icons-material/LiveTv';
 
 
-export default function Card({cards = [{
+export default function Card({
    name,
-   user : {avatarUrl, verified}, 
+   user = {avatarUrl, verified}, 
    mediaUrl,  
    price, 
    currency, 
-   timeLeft}]}) {
+   timeLeft}) {
  
  
   const timer = <div className="badge">
