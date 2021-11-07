@@ -9,7 +9,7 @@ import Auctions from "../auctions/Auctions";
 import Footer from "../footer/Footer";
 import How from "../how/How";
 import Featured from "../featured/Featured";
-import CollectorsColumn from "../collectors/CollectorColumn";
+import CollectorColumn from "../collectors/CollectorColumn";
 
 
 export default function Copyright() {
