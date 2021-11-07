@@ -13,7 +13,7 @@ export default function Step({number, title, description}){
         
         <Grid container >
         
-            <Grid ><Item className={classNames(styles.number)}>{number}</Item></Grid>
+            <Grid className={classNames(styles.number)}><Item >{number}</Item></Grid>
             <Grid item><Item>{title}</Item></Grid>
             <Grid item><Item>{description}</Item></Grid>
             
