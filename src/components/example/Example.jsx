@@ -9,6 +9,7 @@ import Auctions from "../auctions/Auctions";
 import Footer from "../footer/Footer";
 import How from "../how/How";
 import Featured from "../featured/Featured";
+import CollectorsColumn from "../collector/CollectorsColumn";
 
 
 export default function Copyright() {
@@ -52,6 +53,7 @@ export default function Copyright() {
           href: "/about"
         }
       ]}/>
+      <CollectorsColumn items={[]}/>
       <Container className={classNames(styles.container)} maxWidth="xl">
       
         <Paper className={classNames(styles.paper)}>
