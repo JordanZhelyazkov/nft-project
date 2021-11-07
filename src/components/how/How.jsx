@@ -9,13 +9,13 @@ const mappedItems = items.map((it, index) => {
 })
     return (
     <div>
-        <Grid container>
-            <Grid item><Item>{description}</Item></Grid>
+        <Grid container className="container" style={{display: 'flex', flexDirection: "column"}}>
             <Grid item><Item>{title}</Item></Grid>
             <Grid item><Item>{description}</Item></Grid>
             <Grid item><Item><button href={link}>Learn more</button></Item></Grid>
+            {mappedItems}
         </Grid>
-       {mappedItems}
+       
         
         
     </div>
