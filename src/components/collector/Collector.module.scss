@@ -1,0 +1,11 @@
+@use "../../styles/colors";
+
+.container {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .light {
+    background-color: rgba(colors.$primary_main, 30%)
+  }
