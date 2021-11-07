@@ -18,6 +18,7 @@ export default function Copyright() {
       <Trending cards={[]}/>
       <Auctions cards={[]}/>
       <How 
+      
       />
       <Container className={classNames(styles.container)} maxWidth="xl">
       
@@ -43,4 +44,3 @@ export default function Copyright() {
 //         description: "pesho i tosho team"
 //     }]}
 //       link="https://bg.wikipedia.org/wiki/SVG#/media/%D0%A4%D0%B0%D0%B9%D0%BB:SVG_Logo.svg"
-      

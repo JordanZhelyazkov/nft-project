@@ -7,7 +7,7 @@ import Paper from '@mui/material/Paper';
 
 
 
-export default function How({description, title, items = [], link}){
+export default function How({description, title, items=[], link}){
 const mappedItems = items.map((it, index) => 
 <Step number={index} title={it.title} description={it.description}/>)
     return (

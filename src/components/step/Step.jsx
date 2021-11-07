@@ -1,6 +1,8 @@
 import Grid from "@mui/material/Grid";
 import Item from '@mui/material/ListItemAvatar';
 import styles from "./Step.module.scss";
+import classNames from "classnames";
+
 
 
 
@@ -11,7 +13,7 @@ export default function Step({number, title, description}){
         
         <Grid container >
         
-            <Grid item className="number"><Item >{number}</Item></Grid>
+            <Grid ><Item className={classNames(styles.number)}>{number}</Item></Grid>
             <Grid item><Item>{title}</Item></Grid>
             <Grid item><Item>{description}</Item></Grid>
             
