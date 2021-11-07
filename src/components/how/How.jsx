@@ -1,6 +1,6 @@
 import Grid from "@mui/material/Grid";
 import Item from '@mui/material/ListItemAvatar';
-import Step from "../step/Step";
+import Step from "./Step";
 import styles from "./How.module.scss";
 import classNames from "classnames";
 import Paper from '@mui/material/Paper';
