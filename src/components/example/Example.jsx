@@ -17,7 +17,16 @@ export default function Copyright() {
       <Header />
       <Trending cards={[]}/>
       <Auctions cards={[]}/>
-      <How 
+      <How description="this is a card" 
+      title="this is the title" 
+      items={[{
+        title: "ivan i go6o",
+        description: "this is ivan i go6o"
+      },{
+        title: "pe6o i to6o",
+        description: "pesho i tosho team"
+    }]}
+      link="https://bg.wikipedia.org/wiki/SVG#/media/%D0%A4%D0%B0%D0%B9%D0%BB:SVG_Logo.svg"
       
       />
       <Container className={classNames(styles.container)} maxWidth="xl">
@@ -34,13 +43,3 @@ export default function Copyright() {
   );
 }
 
-// description="this is a card" 
-//       title="this is the title" 
-//       items={[{
-//         title: "ivan i go6o",
-//         description: "this is ivan i go6o"
-//       },{
-//         title: "pe6o i to6o",
-//         description: "pesho i tosho team"
-//     }]}
-//       link="https://bg.wikipedia.org/wiki/SVG#/media/%D0%A4%D0%B0%D0%B9%D0%BB:SVG_Logo.svg"
