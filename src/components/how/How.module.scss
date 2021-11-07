@@ -1,2 +1,11 @@
 @use "../../styles/colors";
 
+.wrapper {
+  background-color: colors.$background_default;
+}
+
+.container {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
