@@ -55,7 +55,7 @@ export default function Copyright() {
         }
       ]}/>
       <TopCollectors collectors={[]}/>
-      <ProductImage url="../public/images/nft.jpg"/>
+      <ProductImage  url="../public/images/nft.jpg"/>
       <Container className={classNames(styles.container)} maxWidth="xl">
       
         <Paper className={classNames(styles.paper)}>
