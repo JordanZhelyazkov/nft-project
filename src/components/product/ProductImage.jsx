@@ -1,4 +1,5 @@
 import styles from "./ProductImage.module.scss";
+import classNames from "classnames";
 
 export default function ProductImage({url}){
 
