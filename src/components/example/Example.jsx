@@ -10,6 +10,7 @@ import Footer from "../footer/Footer";
 import How from "../how/How";
 import Featured from "../featured/Featured";
 import CollectorColumn from "../collectors/CollectorColumn";
+import TopCollectors from "../collectors/TopCollectors";
 
 
 export default function Copyright() {
@@ -53,7 +54,10 @@ export default function Copyright() {
           href: "/about"
         }
       ]}/>
-      <CollectorColumn items={[]}/>
+      {/* <CollectorColumn items={[]}/> */}
+      <TopCollectors collectors={[
+        
+      ]}/>
       <Container className={classNames(styles.container)} maxWidth="xl">
       
         <Paper className={classNames(styles.paper)}>
@@ -68,13 +72,29 @@ export default function Copyright() {
   );
 }
 
-// description="this is a card" 
-//       title="this is the title" 
-//       items={[{
-//         title: "ivan i go6o",
-//         description: "this is ivan i go6o"
-//       },{
-//         title: "pe6o i to6o",
-//         description: "pesho i tosho team"
-//     }]}
-//       link="https://bg.wikipedia.org/wiki/SVG#/media/%D0%A4%D0%B0%D0%B9%D0%BB:SVG_Logo.svg"
+// {
+//   name: "ivan",
+//   nftsCount: 5,
+//   avatar: "./images/logo.svg",
+//   verified: true
+// },{
+//   name: "go6o",
+//   nftsCount: 1,
+//   avatar: "./images/nft.jpg",
+//   verified: true
+// },{
+//   name: "pe6o",
+//   nftsCount: 2,
+//   avatar: "./images/logo-muted.svg",
+//   verified: true
+// },{
+//   name: "kolio",
+//   nftsCount: 10,
+//   avatar: "./images/verified.svg",
+//   verified: true
+// },{
+//   name: "dragan",
+//   nftsCount: 1,
+//   avatar: "./images/logo.svg",
+//   verified: true
+// }
