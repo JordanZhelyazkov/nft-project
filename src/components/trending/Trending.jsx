@@ -14,15 +14,15 @@ import { useState } from "react";
 
 
 export default function Trending({cards=[]}){
-  
 
     const [period, setPeriod] = useState('');
 
   const handleChange = (event) => {
     setPeriod(event.target.value);
   };
-  const mappedCards = cards.map(card => <Card name={card.name} avatarUrl={card.user.avatarUrl}
-  verified={card.user.verified} mediaUrl={card.mediaUrl} price={card.price} currency={card.currency}/>)
+  const mappedCards = cards.map(({name,user,mediaUrl,price,currency}) => <Card name={name} avatarUrl={user}
+  verified={user} mediaUrl={mediaUrl} price={price} currency={currency}/> )
+  
   
 
     return(

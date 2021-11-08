@@ -12,8 +12,6 @@ import trendingData from "../public/data/trending.json";
 import usersData from "../public/data/users.json";
 import { useState, useEffect } from "react";
 
-
-
 export default function Index() {
 const [featuredCards, setFeaturedCards] = useState([]);
 const [trending, setTrending] = useState([]);
