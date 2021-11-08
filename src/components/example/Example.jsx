@@ -10,6 +10,7 @@ import Footer from "../footer/Footer";
 import How from "../how/How";
 import Featured from "../featured/Featured";
 import TopCollectors from "../collectors/TopCollectors";
+import ProductImage from "../product/ProductImage";
 
 
 export default function Copyright() {
@@ -54,6 +55,7 @@ export default function Copyright() {
         }
       ]}/>
       <TopCollectors collectors={[]}/>
+      <ProductImage url="../public/images/nft.jpg"/>
       <Container className={classNames(styles.container)} maxWidth="xl">
       
         <Paper className={classNames(styles.paper)}>

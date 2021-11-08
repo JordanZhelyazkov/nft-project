@@ -11,7 +11,8 @@ import nftsData from "../public/data/nfts.json";
 import trendingData from "../public/data/trending.json";
 import usersData from "../public/data/users.json";
 import { useState, useEffect } from "react";
-import ProductImage from "../src/components/product/ProductImage";
+
+
 
 export default function Index() {
 const [featuredCards, setFeaturedCards] = useState([]);
@@ -34,7 +35,7 @@ useEffect(() => {
     <How />
     <Auctions cards={nftsData}/>
     <Footer />
-    <ProductImage url=""/>
+    
     </div>
   )
 }
