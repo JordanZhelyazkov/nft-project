@@ -1,1 +1,9 @@
 @use "../../styles/colors";
+
+.product-image{
+ background-color: colors.$primary_main;
+}
+
+.image{
+background-color: colors.$background_default;
+}

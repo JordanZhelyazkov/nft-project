@@ -23,6 +23,7 @@ export default function Trending({cards=[]}){
   };
   const mappedCards = cards.map(card => <Card name={card.name} avatarUrl={card.user.avatarUrl}
   verified={card.user.verified} mediaUrl={card.mediaUrl} price={card.price} currency={card.currency}/>)
+  
 
     return(
      <Container >  

@@ -4,8 +4,8 @@ export default function ProductImage({url}){
 
     return (
       <div>
-          <div className="product-image">
-          <img className="image" src={url}/>
+          <div className={classNames(styles.product-image)}>
+          <img className={classNames(styles.image)} src={url}/>
           </div>
       </div>
     )
