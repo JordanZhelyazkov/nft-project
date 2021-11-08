@@ -4,8 +4,8 @@ import "./ProductImage.module.scss";
 export default function ProductImage({url}){
 
     return (
-      <div >
-          <img   src={url}/>
+      <div>
+          <img className="image" src={url}/>
           </div>
       
     )
