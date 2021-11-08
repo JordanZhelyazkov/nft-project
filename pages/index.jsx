@@ -34,7 +34,7 @@ useEffect(() => {
     <How />
     <Auctions cards={nftsData}/>
     <Footer />
-    <ProductImage />
+    <ProductImage url=""/>
     </div>
   )
 }
