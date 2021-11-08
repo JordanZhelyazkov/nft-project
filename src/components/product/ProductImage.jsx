@@ -1,11 +1,11 @@
-import styles from "./ProductImage.module.scss";
+import "./ProductImage.module.scss";
 
 
 export default function ProductImage({url}){
 
     return (
-      <p className={styles.product-image}>
-          <img className={styles.image}  src={url}/>
+      <p className='product-image'>
+          <img className='image'  src={url}/>
           </p>
       
     )
