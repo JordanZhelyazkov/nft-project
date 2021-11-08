@@ -16,7 +16,7 @@ import LiveTvIcon from '@mui/icons-material/LiveTv';
 export default function Card({
    name,
    likes=0,
-   user = {avatarUrl, verified}, 
+   user: avatarUrl, verified, 
    mediaUrl,  
    price, 
    currency, 
@@ -35,8 +35,8 @@ export default function Card({
     <CardHeader
     avatar={
       <Avatar
-            url={user.avatarUrl}
-            verified={user.verified}
+            url={avatarUrl}
+            verified={verified}
           ></Avatar>
     }>
         </CardHeader>

@@ -20,8 +20,9 @@ export default function TopCollectors({collectors}){
     
     collectors.map((collector, index) => collector.id=index);
     const chunked = _.chunk(collectors, 3);
-    const mappedColl = chunked.map((chunk) => <CollectorColumn items={chunk} />)
-
+    
+    const mappedColl = chunked.map((chunk) =>  <CollectorColumn items={chunk}/> )
+    
     
     
     return(
