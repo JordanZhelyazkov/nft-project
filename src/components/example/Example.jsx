@@ -9,7 +9,6 @@ import Auctions from "../auctions/Auctions";
 import Footer from "../footer/Footer";
 import How from "../how/How";
 import Featured from "../featured/Featured";
-import CollectorColumn from "../collectors/CollectorColumn";
 import TopCollectors from "../collectors/TopCollectors";
 
 
@@ -54,10 +53,7 @@ export default function Copyright() {
           href: "/about"
         }
       ]}/>
-      {/* <CollectorColumn items={[]}/> */}
-      <TopCollectors collectors={[
-        
-      ]}/>
+      <TopCollectors collectors={[]}/>
       <Container className={classNames(styles.container)} maxWidth="xl">
       
         <Paper className={classNames(styles.paper)}>
@@ -72,29 +68,3 @@ export default function Copyright() {
   );
 }
 
-// {
-//   name: "ivan",
-//   nftsCount: 5,
-//   avatar: "./images/logo.svg",
-//   verified: true
-// },{
-//   name: "go6o",
-//   nftsCount: 1,
-//   avatar: "./images/nft.jpg",
-//   verified: true
-// },{
-//   name: "pe6o",
-//   nftsCount: 2,
-//   avatar: "./images/logo-muted.svg",
-//   verified: true
-// },{
-//   name: "kolio",
-//   nftsCount: 10,
-//   avatar: "./images/verified.svg",
-//   verified: true
-// },{
-//   name: "dragan",
-//   nftsCount: 1,
-//   avatar: "./images/logo.svg",
-//   verified: true
-// }
