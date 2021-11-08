@@ -1,0 +1,9 @@
+@use "../../styles/colors";
+
+.likes {
+    background-color: colors.$success_main;
+}
+
+.product-info-likes {
+    background-color: colors.$background_paper;
+}
