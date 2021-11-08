@@ -1,0 +1,5 @@
+@use "../../styles/colors";
+
+div.product-info-price {
+    background-color: colors.$background_default;
+}
