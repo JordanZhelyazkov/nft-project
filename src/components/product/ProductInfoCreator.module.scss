@@ -1,6 +1,7 @@
-
+@use "../../styles/colors";
 div.product-info-creator {
-width: auto;
+background-color: colors.$background_default;
+
 }
 .title {
 font-family: sans-serif;
