@@ -16,25 +16,16 @@ export default function ProductInfoTimer({timeEnd, onTimeEnd}){
     }
 }
 
- const returnFunc = () => {
-     if(timeEnd === null) {
          return (
-             <div></div>
+            <div className={styles["product-info-timer"]}>
+            {timeEnd === null ? <div></div> 
+            : <div className={styles["timer"]}>
+            <Countdown date={Date.now() + onTimeEnd} renderer={renderer} />
+            <label className={styles["title"]}>Ends in: {timeEnd}</label>
+            </div>}
+          </div>
          )
-     } else {
-         return (
-       <div className={styles["product-info-timer"]}>
-       <div className={styles["timer"]}>
-       <Countdown date={Date.now() + onTimeEnd} renderer={renderer} />
-       <label className={styles["title"]}>Ends in: {timeEnd}</label>
-       </div>
-     </div>
-         )
-     }
- }
-    
-    return(
-        {returnFunc}
-    )
+     
+ 
     
 }
