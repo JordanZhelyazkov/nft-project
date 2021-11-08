@@ -14,18 +14,24 @@ import { useState, useEffect } from "react";
 
 export default function Index() {
 const [featuredCards, setFeaturedCards] = useState([]);
+const [trending, setTrending] = useState([]);
+const [users, setUsers] = useState([]);
+const [nft, setNfts] = useState([]);
 useEffect(() => {
   setFeaturedCards(featuredData);
+  setTrending(trendingData);
+  setUsers(usersData);
+  setNfts(nftsData);
 }, [])
 
   return (
     <div>
     <Header />
-    <Featured props={JSON.parse(featuredData)}/>
-    <Trending props={trendingData}/>
-    <TopCollectors props={usersData}/>
+    <Featured items={featuredData}/>
+    <Trending cards={trendingData}/>
+    <TopCollectors collectors={usersData.sort((a, b) => b - a)}/>
     <How />
-    <Auctions props={nftsData}/>
+    <Auctions cards={nftsData}/>
     <Footer />
     </div>
   )
