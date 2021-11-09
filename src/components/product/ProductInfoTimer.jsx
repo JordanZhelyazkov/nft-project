@@ -18,7 +18,7 @@ export default function ProductInfoTimer({ timeEnd, onTimeEnd }) {
 //   };
  
   return (
-    <div className={timeEnd ? classNames(styles.product-info-timer,styles.active) : classNames(styles.product-info-timer)}>
+    <div className={timeEnd ? classNames(styles["product-info-timer"],styles["active"]) : classNames(styles["product-info-timer"])}>
     <div className={styles["timer"]} >
     <label className={styles["title"]}>Ends in: {timeEnd}</label>
     {!timeEnd ? "" : 
