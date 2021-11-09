@@ -17,15 +17,15 @@ export default function ProductInfoTimer({ timeEnd, onTimeEnd }) {
  
 
   return (
-    <div className={styles["product-info-timer_active"]}>
+    <div className={timeEnd ? styles["product-info-timer active"] : styles["product-info-timer"]}>
     <div className={styles["timer"]} >
+    <label className={styles["title"]}>Ends in: {timeEnd}</label>
       <Countdown
         onComplete={onTimeEnd}
         style={{display: timeEnd ? "block" : "none"}}
         date={Date.now() + onTimeEnd}
         renderer={renderer}
       />
-      <label className={styles["title"]}>Ends in: {timeEnd}</label>
     </div>
     </div>
   )
