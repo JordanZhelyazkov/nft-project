@@ -2,9 +2,7 @@
 
 div.product-info-timer {
     font-style: italic;
-    .active{
-        background-color: green;
-    }
+    
 }
 
 div.timer {
@@ -14,4 +12,6 @@ div.timer {
 label.title {
     background-color: colors.$info_main;
 }
-
+.active{
+    background-color: green;
+}

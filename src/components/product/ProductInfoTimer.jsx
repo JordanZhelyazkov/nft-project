@@ -20,10 +20,11 @@ export default function ProductInfoTimer({ timeEnd, onTimeEnd }) {
     <div className={styles["product-info-timer"]}>
     <div className={styles["timer"]} >
     <label className={styles["title"]}>Ends in: {timeEnd}</label>
-      <Countdown
+      {!timeEnd ? null : <Countdown
+        
         onComplete={onTimeEnd}
         date={Date.now() + onTimeEnd}
-      />
+      />}
     </div>
     </div>
   )
