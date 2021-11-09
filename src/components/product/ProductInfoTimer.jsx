@@ -1,5 +1,6 @@
 import styles from "./ProductInfoTimer.module.scss";
 import Countdown from "react-countdown";
+import { display } from "@mui/system";
 
 
 export default function ProductInfoTimer({ timeEnd, onTimeEnd }) {
@@ -14,17 +15,27 @@ export default function ProductInfoTimer({ timeEnd, onTimeEnd }) {
 //       );
 //     }
 //   };
+  const isNull = () => {
+      const disValue;
+      if(timeEnd){
+          disValue = {display: "block"};
+          return disValue;
+      } else {
+          disValue = {display: "none"};
+          return disValue
+      }
+  }
  
 
   return (
-    <div className={timeEnd ? styles["product-info-timer active"] : styles["product-info-timer"]}>
+    <div className={styles["product-info-timer"]}>
     <div className={styles["timer"]} >
     <label className={styles["title"]}>Ends in: {timeEnd}</label>
       <Countdown
         onComplete={onTimeEnd}
-        style={{display: timeEnd ? "block" : "none"}}
+        style={isNull}
         date={Date.now() + onTimeEnd}
-        renderer={renderer}
+        // renderer={renderer}
       />
     </div>
     </div>
