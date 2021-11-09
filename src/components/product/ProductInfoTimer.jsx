@@ -1,5 +1,6 @@
 import styles from "./ProductInfoTimer.module.scss";
 import Countdown from "react-countdown";
+import classNames from "classnames";
 
 
 
@@ -17,13 +18,13 @@ export default function ProductInfoTimer({ timeEnd, onTimeEnd }) {
 //   };
  
   return (
-    <div className={styles["product-info-timer"]}>
+    <div className={timeEnd ? classNames(styles.product-info-timer,styles.active) : classNames(styles.product-info-timer)}>
     <div className={styles["timer"]} >
     <label className={styles["title"]}>Ends in: {timeEnd}</label>
-    {!timeLeft ? "" : 
+    {!timeEnd ? "" : 
       <Countdown
-        onComplete={onTimeEnd}
-        date={Date.now() + onTimeEnd}
+        onStop={onTimeEnd}
+        date={timeEnd}
       />}
     </div>
     </div>
