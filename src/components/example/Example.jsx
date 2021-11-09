@@ -13,6 +13,7 @@ import TopCollectors from "../collectors/TopCollectors";
 import ProductImage from "../product/ProductImage";
 
 
+
 export default function Copyright() {
   return (
     
@@ -65,6 +66,7 @@ export default function Copyright() {
           </Link>
         </Paper>
       </Container>
+      
       <Footer type="muted"/>
     </div>
   );
