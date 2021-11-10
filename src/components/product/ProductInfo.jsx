@@ -7,7 +7,7 @@ import ProductInfoCreator from "./ProductInfoCreator";
 import ProductInfoTimer from "./ProductInfoTimer";
 import Stack from '@mui/material/Stack';
 import Grid from '@mui/material/Grid';
-import { AspectRatio } from 'react-aspect-ratio';
+
 
 
 
@@ -27,16 +27,13 @@ export default function ProductInfo({title, creator, price, currency, likes, onT
          alignItems="center"
         //  style={{aspectRatio: "7/5"}}
         >
-            <AspectRatio ratio="6/5" >
-             <Grid item >
+            
+             <Grid item className={styles["grid-item1"]} >
                  <ProductInfoCreator name={creator.name} avatar={creator.avatar}></ProductInfoCreator>
                  </Grid>
-                 </AspectRatio>
-                 <AspectRatio ratio="7/5" >
-                 <Grid item >
+                 <Grid item className={styles["grid-item2"]}>
                  <ProductInfoTimer timeEnd={timeEnd} onTimeEnd={onTimeEnd}></ProductInfoTimer>
                  </Grid>
-                 </AspectRatio>
              </Grid>
          
          {isLive && <p><ProductInfoStatus></ProductInfoStatus></p>}
