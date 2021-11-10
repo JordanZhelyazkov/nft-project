@@ -14,7 +14,7 @@ export default function ProductInfo({title, creator, price, currency, likes, onT
 
     return(
         <div className={styles["product-info"]}>
-        <ProductInfoTitle text={title}/>
+        <h1><ProductInfoTitle text={title}></ProductInfoTitle></h1>
          <Stack className={styles["stats"]} direction="row" spacing={4}>
              <ProductInfoPrice amount={price} currency={currency}> </ProductInfoPrice>
              <ProductInfoLikes amount={likes}></ProductInfoLikes>
@@ -24,13 +24,13 @@ export default function ProductInfo({title, creator, price, currency, likes, onT
          direction="row" 
          justifyContent="center"
          alignItems="center"
-         style={{aspectRatio: "7/5"}}
+        //  style={{aspectRatio: "7/5"}}
         >
-             <Grid item ><ProductInfoCreator name={creator}  /></Grid>
-             <Grid item ><ProductInfoTimer timeEnd={timeEnd} onTimeEnd={onTimeEnd}/></Grid>
+             <Grid item ><ProductInfoCreator name={creator.name} avatar={creator.avatar}></ProductInfoCreator></Grid>
+             <Grid item ><ProductInfoTimer timeEnd={timeEnd} onTimeEnd={onTimeEnd}></ProductInfoTimer></Grid>
              </Grid>
-
-         {isLive && <ProductInfoStatus></ProductInfoStatus>}
+         
+         {isLive && <p><ProductInfoStatus></ProductInfoStatus></p>}
         </div>
     )
 }
