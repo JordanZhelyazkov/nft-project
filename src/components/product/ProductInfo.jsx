@@ -24,13 +24,13 @@ export default function ProductInfo({title, creator, price, currency, likes, onT
          direction="row" 
          justifyContent="center"
          alignItems="center"
-        //  grid-row="7/5" 
+         style={{aspectRatio: "7/5"}}
         >
-             <Grid item style={{aspectRatio: "6/5"}}><ProductInfoCreator name={creator}  /></Grid>
-             <Grid item style={{aspectRatio: "7/5"}}><ProductInfoTimer timeEnd={timeEnd} onTimeEnd={onTimeEnd}/></Grid>
+             <Grid item ><ProductInfoCreator name={creator}  /></Grid>
+             <Grid item ><ProductInfoTimer timeEnd={timeEnd} onTimeEnd={onTimeEnd}/></Grid>
              </Grid>
 
-         {isLive != null && <ProductInfoStatus></ProductInfoStatus>}
+         {isLive && <ProductInfoStatus></ProductInfoStatus>}
         </div>
     )
 }
