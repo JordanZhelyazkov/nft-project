@@ -26,8 +26,14 @@ export default function ProductInfo({title, creator, price, currency, likes, onT
          alignItems="center"
         //  style={{aspectRatio: "7/5"}}
         >
-             <Grid item ><ProductInfoCreator name={creator.name} avatar={creator.avatar}></ProductInfoCreator></Grid>
-             <Grid item ><ProductInfoTimer timeEnd={timeEnd} onTimeEnd={onTimeEnd}></ProductInfoTimer></Grid>
+             <Grid item 
+             style={{aspectRatio: "6 / 5"}} >
+                 <ProductInfoCreator  name={creator.name} avatar={creator.avatar}></ProductInfoCreator>
+                 </Grid>
+             <Grid item 
+             style={{aspectRatio: "7 / 5"}}>
+                 <ProductInfoTimer timeEnd={timeEnd} onTimeEnd={onTimeEnd}></ProductInfoTimer>
+                 </Grid>
              </Grid>
          
          {isLive && <p><ProductInfoStatus></ProductInfoStatus></p>}
