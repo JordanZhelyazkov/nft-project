@@ -19,9 +19,10 @@ export default function ProductInfoTimer({ timeEnd, onTimeEnd }) {
  
   return (
     <div className={timeEnd ? classNames(styles["product-info-timer"],styles["active"]) : classNames(styles["product-info-timer"])}>
+    <h3 className={styles["title"]}>Ends in: {timeEnd}</h3>
     <div className={styles["timer"]} >
-     {timeEnd && <Countdown onStop={onTimeEnd} date={timeEnd}/>}
-     <h3 className={styles["title"]}>Ends in: {timeEnd}</h3>
+     {timeEnd && <Countdown onStop={onTimeEnd} date={timeEnd}></Countdown>}
+     
     </div>
     </div>
   )
