@@ -30,8 +30,10 @@ export default function ProductInfo({
       </Stack>
       <Grid
         container
-        display="flex"
+        display="grid"
         direction="row"
+        justifyContent="center"
+        alignItems="center"
       
       >
         <Grid item  >
@@ -47,11 +49,11 @@ export default function ProductInfo({
         </Grid>
       </Grid>
 
-      {isLive && (
+      {isLive && 
         <p>
           <ProductInfoStatus></ProductInfoStatus>
         </p>
-      )}
+      }
     </div>
   );
 }
