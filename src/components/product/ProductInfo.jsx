@@ -33,12 +33,18 @@ export default function ProductInfo({
         display="flex"
         direction="row"
       >
-        <Grid item style={{height: "118px", aspectRatio: "7/5"}} >
+        <Grid item style={{position: "relative",
+          height: "118px",
+          aspectRatio: "6/5",
+          width: "calc(100%/(var(--aspect-ratio)))"}} >
           <ProductInfoCreator
             name={creator.name} avatar={creator.avatar}
           ></ProductInfoCreator>
         </Grid>
-        <Grid item style={{height: "118px", aspectRatio: "6/5"}} >
+        <Grid item style={{position: "relative",
+          height: "118px",
+          aspectRatio: "7/5",
+          width: "calc(100%/(var(--aspect-ratio)))"}} >
           <ProductInfoTimer
             timeEnd={timeEnd}
             onTimeEnd={onTimeEnd}
@@ -54,4 +60,3 @@ export default function ProductInfo({
     </div>
   );
 }
-// style={{height: "33px", aspectRatio: "6/5"}}
