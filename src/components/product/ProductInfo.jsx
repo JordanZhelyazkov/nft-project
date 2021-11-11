@@ -31,19 +31,16 @@ export default function ProductInfo({
       </Stack>
       <Grid
         container
+        className={styles["grid-container"]}
         display="flex"
         direction="row"
-        justifyContent="center"
-        alignItems="center"
-        //  style={{aspectRatio: "7/5"}}
       >
-        <Grid item style={{width:"200px", height: "200px" ,aspectRatio: "6/5"}}>
+        <Grid item className={styles["grid-item1"]} >
           <ProductInfoCreator
-            name={creator.name}
-            avatar={creator.avatar}
+            name={creator}
           ></ProductInfoCreator>
         </Grid>
-        <Grid item style={{width:"200px", height: "200px" ,aspectRatio: "7/5"}}>
+        <Grid item className={styles["grid-item2"]} >
           <ProductInfoTimer
             timeEnd={timeEnd}
             onTimeEnd={onTimeEnd}
