@@ -32,18 +32,14 @@ export default function ProductInfo({
         container
         display="flex"
         direction="row"
-        style={{justifyContent: "flex-end"}}
+      
       >
-        <Grid item style={{height: "118px",
-borderRadius: "15px",
- aspectRatio: "7/5"}} >
+        <Grid item style={{height: "118px", aspectRatio: "7/5"}} >
           <ProductInfoCreator
             name={creator}
           ></ProductInfoCreator>
         </Grid>
-        <Grid item style={{height: "118px",
-borderRadius: "15px",
-aspectRatio: "6/5"}} >
+        <Grid item style={{height: "118px", aspectRatio: "6/5"}} >
           <ProductInfoTimer
             timeEnd={timeEnd}
             onTimeEnd={onTimeEnd}
