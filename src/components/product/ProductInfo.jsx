@@ -25,22 +25,25 @@ export default function ProductInfo({
       </h1>
       <Stack className={styles["stats"]} direction="row" spacing={4}>
         <ProductInfoPrice amount={price} currency={currency}>
-          {" "}
         </ProductInfoPrice>
         <ProductInfoLikes amount={likes}></ProductInfoLikes>
       </Stack>
       <Grid
         container
-        className={styles["grid-container"]}
         display="flex"
         direction="row"
+        style={{justifyContent: "flex-end"}}
       >
-        <Grid item className={styles["grid-item1"]} >
+        <Grid item style={{height: "118px",
+borderRadius: "15px",
+ aspectRatio: "7/5"}} >
           <ProductInfoCreator
             name={creator}
           ></ProductInfoCreator>
         </Grid>
-        <Grid item className={styles["grid-item2"]} >
+        <Grid item style={{height: "118px",
+borderRadius: "15px",
+aspectRatio: "6/5"}} >
           <ProductInfoTimer
             timeEnd={timeEnd}
             onTimeEnd={onTimeEnd}
