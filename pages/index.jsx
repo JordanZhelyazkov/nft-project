@@ -10,7 +10,6 @@ import featuredData from "../public/data/featured.json";
 import nftsData from "../public/data/nfts.json";
 import trendingData from "../public/data/trending.json";
 import usersData from "../public/data/users.json";
-import ProductInfo from "../src/components/product/ProductInfo";
 import { useState, useEffect } from "react";
 
 export default function Index() {
@@ -33,7 +32,6 @@ useEffect(() => {
     <TopCollectors collectors={usersData.sort((a, b) => b - a)}/>
     <How />
     <Auctions cards={nftsData}/>
-    <ProductInfo />
     <Footer />
     
     </div>
