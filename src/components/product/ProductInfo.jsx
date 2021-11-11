@@ -30,15 +30,13 @@ export default function ProductInfo({
       </Stack>
       <Grid
         container
-        display="grid"
+        display="flex"
         direction="row"
-        justifyContent="center"
-        alignItems="center"
       
       >
         <Grid item  >
           <ProductInfoCreator
-            name={creator}
+            name={creator.name} avatar={creator.avatar}
           ></ProductInfoCreator>
         </Grid>
         <Grid item  >
