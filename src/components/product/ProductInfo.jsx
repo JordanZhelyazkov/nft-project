@@ -30,21 +30,16 @@ export default function ProductInfo({
       </Stack>
       <Grid
         container
+        spacing={2}
         display="flex"
         direction="row"
       >
-        <Grid item style={{position: "relative",
-          height: "118px",
-          aspectRatio: "6/5",
-          width: "calc(100%/(var(--aspect-ratio)))"}} >
+        <Grid item xs={7} >
           <ProductInfoCreator
             name={creator.name} avatar={creator.avatar}
           ></ProductInfoCreator>
         </Grid>
-        <Grid item style={{position: "relative",
-          height: "118px",
-          aspectRatio: "7/5",
-          width: "calc(100%/(var(--aspect-ratio)))"}} >
+        <Grid item xs={5} >
           <ProductInfoTimer
             timeEnd={timeEnd}
             onTimeEnd={onTimeEnd}
