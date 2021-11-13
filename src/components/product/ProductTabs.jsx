@@ -2,11 +2,12 @@ import styles from "./ProductTabs.module.scss";
 import TabContext from '@mui/lab/TabContext';
 import TableRow from '@mui/material/TableRow';
 import User from "../user/User";
-import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import TabList from '@mui/lab/TabList';
 import Tab from '@mui/material/Tab';
 import TabPanel from '@mui/lab/TabPanel';
+import TableCell from '@mui/material/TableCell';
+import TableBody from '@mui/material/TableBody';
 import { useState } from "react";
 import { formatDistance, parseISO, subDays  } from 'date-fns'
 
@@ -35,7 +36,21 @@ export default function ProductTabs({text, bids }){
           </TabList>
         </Box>
         <TabPanel value="1">{text}</TabPanel>
-        <TabPanel value="2">{bids.map((bid, index) =>  <TableRow className={`table-row-${index}`} ><User/>{bid}</TableRow>  )}</TabPanel>
+        <TabPanel value="2">
+        <TableBody>{bids.map((bid, i) =>  
+        <TableRow className={styles[`table-row-${i}`]} >
+             <TableCell component="th" scope="row">
+               <User />
+              </TableCell>
+              <TableCell align="right">
+                  {bid}
+                  </TableCell>
+                  <TableCell align="right">
+                  {dateResult}
+                  </TableCell>
+            </TableRow>  )}
+            </TableBody>
+        </TabPanel>
       </TabContext>
     </Box>
     </div>
