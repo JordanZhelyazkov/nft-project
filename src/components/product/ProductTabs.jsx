@@ -19,27 +19,25 @@ export default function ProductTabs({text, bids }){
 
     const [value, setValue] = useState('1');
 
-    const handleChange = (event) => {
-        setValue(event.target.value);
+    const handleChange = (event, newValue) => {
+        setValue(newValue);
     }
     let dateResult = formatDistance(subDays(new Date(), 3), new Date(), { addSuffix: true });
 
     return(
     <div className={styles['product-tabs']}>
-        <TabContext value={value}>
-        <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-        <TabList onChange={handleChange} >
-        <AppBar position="static">
+    <Box sx={{ typography: 'body1' }}>
+      <TabContext value={value}>
+        <Box sx={{ borderBottom: 1}}>
+          <TabList onChange={handleChange} >
             <Tab label="Details" value="1" className={styles["tab-details"]}/>
-            <Tab label="Bids" value="2" className={styles["tab-bids "]}/>
-        </AppBar>
-        </TabList>
+            <Tab label="Bids" value="2" className={styles["tab-bids"]}/>
+          </TabList>
         </Box>
         <TabPanel value="1">{text}</TabPanel>
-        <TabPanel value="2">
-        <TableRow className={styles[`table-row-${i}`]}><User />{bids}{dateResult}</TableRow>
-        </TabPanel>
-        </TabContext>  
+        <TabPanel value="2">{bids.map((bid, index) =>  <TableRow className={`table-row-${index}`} ><User/>{bid}</TableRow>  )}</TabPanel>
+      </TabContext>
+    </Box>
     </div>
     )
 }
