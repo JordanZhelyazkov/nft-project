@@ -38,13 +38,13 @@ export default function ProductTabs({text, bids }){
         <TabPanel value="1">{text}</TabPanel>
         <TabPanel value="2">
         <TableBody>{bids.map((bid, i) =>  
-        <TableRow className={styles[`table-row-${i}`]} >
+        <TableRow className='table-row-`${i}`' >
              <TableCell component="th" scope="row">
-               <User />
+               <User ></User>
               </TableCell>
               <TableCell align="right">
                   {bid}
-                  </TableCell>
+            </TableCell>
                   <TableCell align="right">
                   {dateResult}
                   </TableCell>
