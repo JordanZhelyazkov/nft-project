@@ -9,7 +9,7 @@ import TabPanel from '@mui/lab/TabPanel';
 import TableCell from '@mui/material/TableCell';
 import TableBody from '@mui/material/TableBody';
 import { useState } from "react";
-import { formatDistance, parseISO, subDays  } from 'date-fns'
+import { formatDistance, parseISO, subDays  } from 'date-fns';
 
 
 
@@ -37,18 +37,12 @@ export default function ProductTabs({text, bids }){
         </Box>
         <TabPanel value="1">{text}</TabPanel>
         <TabPanel value="2">
-        <TableBody>{bids.map((bid, i) =>  
-        <TableRow className={`table-row-${i}`} >
-             <TableCell component="th" scope="row">
-               <User ></User>
-              </TableCell>
-              <TableCell align="right">
-                  {bid}
-            </TableCell>
-                  <TableCell align="right">
-                  {dateResult}
-                  </TableCell>
-            </TableRow>  )}
+        <TableBody>{bids.map((bid, i) =>  (
+       <TableRow className={`table-row-${i}`} >
+         <User /> {bid} {dateResult}
+         </TableRow>
+         )
+         )}
             </TableBody>
         </TabPanel>
       </TabContext>
@@ -56,3 +50,16 @@ export default function ProductTabs({text, bids }){
     </div>
     )
 }
+
+// <TableRow className={`table-row-${i}`} >
+// <TableCell component="th" scope="row">
+//   <User />
+//  </TableCell>
+//  <TableCell align="right">
+//      {bid}
+// </TableCell>
+//      <TableCell align="right">
+//      {dateResult}
+//      </TableCell>
+// </TableRow>  )
+// )}
