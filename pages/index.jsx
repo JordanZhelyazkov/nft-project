@@ -34,7 +34,6 @@ useEffect(() => {
     <TopCollectors collectors={usersData.sort((a, b) => b - a)}/>
     <How />
     <Auctions cards={nftsData}/>
-    <ProductTabs/>
     <Footer />
     
     </div>

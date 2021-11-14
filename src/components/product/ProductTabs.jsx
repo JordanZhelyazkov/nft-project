@@ -24,6 +24,7 @@ export default function ProductTabs({text, bids }){
         setValue(newValue);
     }
     let dateResult = formatDistance(subDays(new Date(), 3), new Date(), { addSuffix: true });
+    
 
     return(
     <div className={styles['product-tabs']}>
@@ -37,12 +38,12 @@ export default function ProductTabs({text, bids }){
         </Box>
         <TabPanel value="1">{text}</TabPanel>
         <TabPanel value="2">
-        <TableBody>{bids.map((bid, i) =>  (
-       <TableRow className={`table-row-${i}`} >
-         <User /> {bid} {dateResult}
-         </TableRow>
-         )
-         )}
+        <TableBody>
+          
+           {bids.map((bid, i) => <TableRow className={`table-row-${i}`}>
+           <User /> {bid} {dateResult}
+       </TableRow>
+       )}
             </TableBody>
         </TabPanel>
       </TabContext>
