@@ -38,7 +38,7 @@ export default function ProductTabs({text, bids }){
         <TabPanel value="1">{text}</TabPanel>
         <TabPanel value="2">
         <TableBody>{bids.map((bid, i) =>  
-        <TableRow className='table-row-`${i}`' >
+        <TableRow className={`table-row-${i}`} >
              <TableCell component="th" scope="row">
                <User ></User>
               </TableCell>
