@@ -39,10 +39,11 @@ export default function ProductTabs({text, bids }){
         <TabPanel value="1">{text}</TabPanel>
         <TabPanel value="2">
         <TableBody>
-        <User />
-           {bids.map((bid, i) => <TableRow className={`table-row-${i}`}>
-            {bid} {dateResult}
-       </TableRow>
+           {bids.map((bid, i) => (<TableRow className={`table-row-${i}`}>
+           <TableCell component="th" scope="row"><User props={bid.user} /></TableCell>
+           <TableCell>{bid}</TableCell>
+           <TableCell component="th" scope="row">{dateResult}</TableCell>     
+       </TableRow>)
        )}
             </TableBody>
         </TabPanel>
