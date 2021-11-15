@@ -42,9 +42,9 @@ export default function ProductTabs({text, bids }){
         <TabPanel value="2">
         <TableBody>
            {bids.map((bid, i) =>  <TableRow className={styles["table-row-" + `${i}`]}>
-           <TableCell component="th" scope="row"><User user={bid.user} /></TableCell>
-           <TableCell>{bid.amount}</TableCell>
-           <TableCell component="th" scope="row">
+           <TableCell ><User user={bid.user} /></TableCell>
+           <TableCell style={{color: "#24F25E", fontFamily: "Montserrat"}}>{bid.amount}</TableCell>
+           <TableCell style={{color: "#E1E1FC", fontFamily: "Montserrat"}} >
              {formatDistance(parseISO(bid.date, 3), new Date(), { addSuffix: true })}
              </TableCell>     
        </TableRow>

@@ -1,13 +1,11 @@
 .product-tabs {
     width: 578px;
+    left: 1093px;
+  
  }
 
 .tab-details {
-    position: absolute;
-    width: 61px;
-    height: 17px;
-    left: 1117px;
-    top: 499px;    
+    
     font-family: Montserrat;
     font-style: normal;
     font-weight: 600;
@@ -17,11 +15,7 @@
 }
 
 .tab-bids {
-    position: absolute;
-width: 36px;
-height: 17px;
-left: 1265px;
-top: 499px;
+   
 font-family: Montserrat;
 font-style: normal;
 font-weight: 600;
@@ -31,10 +25,11 @@ color: #FFFFFF;
 }
 
 .table-row {
-position: absolute;
 width: 578px;
 height: 64px;
-left: 1090px;
-background: #4E24F2;
+
+
 }
+
+
 

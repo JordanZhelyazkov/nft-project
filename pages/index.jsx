@@ -10,7 +10,7 @@ import featuredData from "../public/data/featured.json";
 import nftsData from "../public/data/nfts.json";
 import trendingData from "../public/data/trending.json";
 import usersData from "../public/data/users.json";
-import ProductTabs from "../src/components/product/ProductTabs";
+// import ProductTabs from "../src/components/product/ProductTabs";
 import { useState, useEffect } from "react";
 
 
@@ -34,31 +34,23 @@ useEffect(() => {
     <TopCollectors collectors={usersData.sort((a, b) => b - a)}/>
     <How />
     <Auctions cards={nftsData}/>
-    <ProductTabs />
+    {/* <ProductTabs  /> */}
     <Footer />
     
     </div>
   )
 }
 
-// text='Ivan i go6o hodili za hlqb' bids={[
+
+
+// text = "fangnisnidgsndg"  bids={[
 //   { 
-//       user: {
-//        name : "ivan",
-//        info: "dreben chovek",
-//        avatar : "./public/images/avatar.png"
-//       },
+//       user: "Ivan",
 //       amount: "500 eth",
 //       date: "2014-02-11T11:30:30"
 //     },{
-//       user: {
-//         name : "Petko",
-//         info: "golqm chovek",
-//         avatar : "./public/images/avatar.png"
-//        },
+//       user: "Georgi",
 //       amount: "300 eth",
 //       date: "2014-04-11T11:30:30"
 //     }
   
-// ]}
-
