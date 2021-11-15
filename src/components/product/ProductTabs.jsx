@@ -23,7 +23,7 @@ export default function ProductTabs({text, bids }){
     const handleChange = (event, newValue) => {
         setValue(newValue);
     }
-    // let dateResult = formatDistance(subDays(new Date(), 3), new Date(), );
+
     const dateFunc = (date) => {
       formatDistance(subDays(date, 3), new Date(), { addSuffix: true })
     }
@@ -43,7 +43,7 @@ export default function ProductTabs({text, bids }){
         <TabPanel value="2">
         <TableBody>
            {bids.map((bid, i) => <TableRow className={styles["table-row-" + `${i}`]}>
-           <TableCell component="th" scope="row"><User props={bid.user} /></TableCell>
+           <TableCell component="th" scope="row"><User user={bid.user} /></TableCell>
            <TableCell>{bid.amount}</TableCell>
            <TableCell component="th" scope="row">
              {formatDistance(parseISO(bid.date, 3), new Date(), { addSuffix: true })}
