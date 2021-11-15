@@ -23,7 +23,10 @@ export default function ProductTabs({text, bids }){
     const handleChange = (event, newValue) => {
         setValue(newValue);
     }
-    let dateResult = formatDistance(subDays(new Date(), 3), new Date(), { addSuffix: true });
+    // let dateResult = formatDistance(subDays(new Date(), 3), new Date(), );
+    const dateFunc = (date) => {
+      formatDistance(subDays(date, 3), new Date(), { addSuffix: true })
+    }
     
 
     return(
@@ -41,8 +44,8 @@ export default function ProductTabs({text, bids }){
         <TableBody>
            {bids.map((bid, i) => (<TableRow className={`table-row-${i}`}>
            <TableCell component="th" scope="row"><User props={bid.user} /></TableCell>
-           <TableCell>{bid}</TableCell>
-           <TableCell component="th" scope="row">{dateResult}</TableCell>     
+           <TableCell>{bid.amount}</TableCell>
+           <TableCell component="th" scope="row">{dateFunc(bid.date)}</TableCell>     
        </TableRow>)
        )}
             </TableBody>
