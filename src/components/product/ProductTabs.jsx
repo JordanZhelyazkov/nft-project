@@ -31,7 +31,6 @@ export default function ProductTabs({text, bids }){
 
     return(
     <div className={styles['product-tabs']}>
-    <Box sx={{ typography: 'body1' }}>
       <TabContext value={value}>
         <Box sx={{ borderBottom: 1}}>
           <TabList onChange={handleChange} >
@@ -42,7 +41,7 @@ export default function ProductTabs({text, bids }){
         <TabPanel value="1">{text}</TabPanel>
         <TabPanel value="2">
         <TableBody>
-           {bids.map((bid, i) => <TableRow className={styles["table-row-" + `${i}`]}>
+           {bids.map((bid, i) =>  <TableRow className={styles["table-row-" + `${i}`]}>
            <TableCell component="th" scope="row"><User user={bid.user} /></TableCell>
            <TableCell>{bid.amount}</TableCell>
            <TableCell component="th" scope="row">
@@ -53,7 +52,6 @@ export default function ProductTabs({text, bids }){
             </TableBody>
         </TabPanel>
       </TabContext>
-    </Box>
     </div>
     )
 }
