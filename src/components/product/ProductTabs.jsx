@@ -42,11 +42,13 @@ export default function ProductTabs({text, bids }){
         <TabPanel value="1">{text}</TabPanel>
         <TabPanel value="2">
         <TableBody>
-           {bids.map((bid, i) => (<TableRow className={`table-row-${i}`}>
+           {bids.map((bid, i) => <TableRow className={styles["table-row-" + `${i}`]}>
            <TableCell component="th" scope="row"><User props={bid.user} /></TableCell>
            <TableCell>{bid.amount}</TableCell>
-           <TableCell component="th" scope="row">{dateFunc(bid.date)}</TableCell>     
-       </TableRow>)
+           <TableCell component="th" scope="row">
+             {formatDistance(parseISO(bid.date, 3), new Date(), { addSuffix: true })}
+             </TableCell>     
+       </TableRow>
        )}
             </TableBody>
         </TabPanel>

@@ -41,5 +41,24 @@ useEffect(() => {
   )
 }
 
-
+// text='Ivan i go6o hodili za hlqb' bids={[
+//   { 
+//       user: {
+//        name : "ivan",
+//        info: "dreben chovek",
+//        avatar : "./public/images/avatar.png"
+//       },
+//       amount: "500 eth",
+//       date: "2014-02-11T11:30:30"
+//     },{
+//       user: {
+//         name : "Petko",
+//         info: "golqm chovek",
+//         avatar : "./public/images/avatar.png"
+//        },
+//       amount: "300 eth",
+//       date: "2014-04-11T11:30:30"
+//     }
+  
+// ]}
 
