@@ -1,35 +1,42 @@
+@use "../../styles/colors";
+
 .product-tabs {
     width: 578px;
     left: 1093px;
-  
+    background:  #0C0C14;
  }
 
 .tab-details {
-    
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 17px;
-    color: #E1E1FC;
+
+font-family: Montserrat;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: 17px;
+letter-spacing: 0em;
+text-align: left;
+color: #E1E1FC;
+
 }
 
 .tab-bids {
-   
-font-family: Montserrat;
-font-style: normal;
-font-weight: 600;
-font-size: 14px;
-line-height: 17px;
-color: #FFFFFF;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+    
 }
 
-.table-row {
-width: 578px;
-height: 64px;
-
-
+.table-row  {
+    width: 578px;
 }
+
+
+
 
 
 

@@ -10,7 +10,6 @@ import featuredData from "../public/data/featured.json";
 import nftsData from "../public/data/nfts.json";
 import trendingData from "../public/data/trending.json";
 import usersData from "../public/data/users.json";
-// import ProductTabs from "../src/components/product/ProductTabs";
 import { useState, useEffect } from "react";
 
 
@@ -34,23 +33,31 @@ useEffect(() => {
     <TopCollectors collectors={usersData.sort((a, b) => b - a)}/>
     <How />
     <Auctions cards={nftsData}/>
-    {/* <ProductTabs  /> */}
+  
     <Footer />
     
     </div>
   )
 }
+{/* <ProductTabs  text = "fangnisnidgsndg"  bids={[
+  { 
+      user: {name: "Ivan", info: "az sym ivan", avatar: "../images/avatar.png"},
+      amount: "500 eth",
+      date: "2014-02-11T11:30:30"
+    },{
+      user: {name: "Georgi", info: "az sym georgi", avatar: "../images/avatar.png"},
+      amount: "300 eth",
+      date: "2014-04-11T11:30:30"
+    },{
+      user: {name: "Georgi", info: "az sym georgi", avatar: "../images/avatar.png"},
+      amount: "300 eth",
+      date: "2014-04-11T11:30:30"
+    },{
+      user: {name: "Georgi", info: "az sym georgi", avatar: "../images/avatar.png"},
+      amount: "300 eth",
+      date: "2014-04-11T11:30:30"
+    }]}/>  */}
 
 
 
-// text = "fangnisnidgsndg"  bids={[
-//   { 
-//       user: "Ivan",
-//       amount: "500 eth",
-//       date: "2014-02-11T11:30:30"
-//     },{
-//       user: "Georgi",
-//       amount: "300 eth",
-//       date: "2014-04-11T11:30:30"
-//     }
   

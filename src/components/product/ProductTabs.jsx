@@ -10,11 +10,7 @@ import TableCell from '@mui/material/TableCell';
 import TableBody from '@mui/material/TableBody';
 import { useState } from "react";
 import { formatDistance, parseISO, subDays  } from 'date-fns';
-
-
-
-
-
+import {styled} from '@mui/system';
 
 export default function ProductTabs({text, bids }){
 
@@ -27,11 +23,19 @@ export default function ProductTabs({text, bids }){
     const dateFunc = (date) => {
       formatDistance(subDays(date, 3), new Date(), { addSuffix: true })
     }
+
+    const StyledTableRow = styled(TableRow)({
+      backgroundColor: "#4E24F2",
+      width: "578px",
+      height: "64px",
+      '&:nth-of-type(even)': {
+        opacity: 0.15,
+      },
+    })
     
 
     return(
-    <div className={styles['product-tabs']}>
-      <TabContext value={value}>
+      <TabContext className={styles['product-tabs']} value={value}>
         <Box sx={{ borderBottom: 1}}>
           <TabList onChange={handleChange} >
             <Tab label="Details" value="1" className={styles["tab-details"]}/>
@@ -41,17 +45,17 @@ export default function ProductTabs({text, bids }){
         <TabPanel value="1">{text}</TabPanel>
         <TabPanel value="2">
         <TableBody>
-           {bids.map((bid, i) =>  <TableRow className={styles["table-row-" + `${i}`]}>
-           <TableCell ><User user={bid.user} /></TableCell>
-           <TableCell style={{color: "#24F25E", fontFamily: "Montserrat"}}>{bid.amount}</TableCell>
-           <TableCell style={{color: "#E1E1FC", fontFamily: "Montserrat"}} >
+           {bids.map((bid, i) =>  <StyledTableRow  className={(styles['table-row'], `table-row-${i}`)} >
+           <TableCell  ><User {...bid.user} /></TableCell>
+           <TableCell >{bid.amount}</TableCell>
+           <TableCell >
              {formatDistance(parseISO(bid.date, 3), new Date(), { addSuffix: true })}
              </TableCell>     
-       </TableRow>
+       </StyledTableRow>
        )}
             </TableBody>
         </TabPanel>
       </TabContext>
-    </div>
+      
     )
 }
