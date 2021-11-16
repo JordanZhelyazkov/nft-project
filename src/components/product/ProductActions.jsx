@@ -1,9 +1,9 @@
-import styles from "./ProductAuctions.module.scss";
+import styles from "./ProductActions.module.scss";
 import Button from '@mui/material/Button';
 
-export default function ProductAuctions({isLive, currency, buyAmount, bidAmount, onBuy, onBid}){
+export default function ProductActions({isLive, currency, buyAmount, bidAmount, onBuy, onBid}){
 
-    return(
+    return (
         <div className={styles["product-auctions"]}>
          <Button 
          style={{backgroundColor: "#0C0C14", height: "12px"}}
