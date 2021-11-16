@@ -12,7 +12,6 @@ export default function ProductAuctions({isLive, currency, buyAmount, bidAmount,
          xs={7} 
          className={styles["button"]} 
          onClick={onBuy}
-         
          >BUY FOR {buyAmount} {currency}</Button>
          <Button xs={5} 
          style={{background: "#0C0C14", height: "12px"}}   
