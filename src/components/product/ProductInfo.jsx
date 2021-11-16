@@ -36,7 +36,7 @@ export default function ProductInfo({
       >
         <Grid item xs={7} >
           <ProductInfoCreator
-            name={creator.name} avatar={creator.avatar}
+            {...creator}
           ></ProductInfoCreator>
         </Grid>
         <Grid item xs={5} >
