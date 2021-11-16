@@ -11,7 +11,7 @@ import nftsData from "../public/data/nfts.json";
 import trendingData from "../public/data/trending.json";
 import usersData from "../public/data/users.json";
 import { useState, useEffect } from "react";
-import ProductAuctions from "../src/components/product/ProductAuctions";
+
 
 export default function Index() {
 const [featuredCards, setFeaturedCards] = useState([]);
@@ -33,7 +33,7 @@ useEffect(() => {
     <TopCollectors collectors={usersData.sort((a, b) => b - a)}/>
     <How />
     <Auctions cards={nftsData}/>
-    {/* <ProductAuctions /> */}
+
     <Footer />
     
     </div>

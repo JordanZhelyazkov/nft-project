@@ -6,8 +6,8 @@ export default function ProductAuctions({isLive, currency, buyAmount, bidAmount,
     return(
         <div className={styles["product-auctions"]}>
          <Button 
-         style={{backgroundColor: "#0C0C14",color: "#E1E1FC", height: "12px"}}
-         variant="outlined"
+         style={{backgroundColor: "#0C0C14", height: "12px"}}
+         variant="contained"
          disabled={!isLive}
          xs={7} 
          className={styles["button"]} 
@@ -15,11 +15,12 @@ export default function ProductAuctions({isLive, currency, buyAmount, bidAmount,
          
          >BUY FOR {buyAmount} {currency}</Button>
          <Button xs={5} 
-         style={{background: "#0C0C14", color: "#E1E1FC", height: "12px"}}   
+         style={{background: "#0C0C14", height: "12px"}}   
          variant="outlined"
          disabled={isLive}
          className={styles["button"]} 
          onClick={onBid}
+         color="success"
          >PLACE BID FOR {bidAmount} {currency}</Button>
         </div>
     )
