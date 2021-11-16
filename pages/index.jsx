@@ -11,6 +11,7 @@ import nftsData from "../public/data/nfts.json";
 import trendingData from "../public/data/trending.json";
 import usersData from "../public/data/users.json";
 import { useState, useEffect } from "react";
+import ProductActions from "../src/components/product/ProductActions";
 
 
 
@@ -34,7 +35,7 @@ useEffect(() => {
     <TopCollectors collectors={usersData.sort((a, b) => b - a)}/>
     <How />
     <Auctions cards={nftsData}/>
-    {/* <ProductActions isLive={true} currency={"ETH"} buyAmount={50} bidAmount={9} /> */}
+    <ProductActions isLive={true} currency={"ETH"} buyAmount={50} bidAmount={9} />
     <Footer />
     
     </div>

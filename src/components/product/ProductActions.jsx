@@ -1,26 +1,38 @@
 import styles from "./ProductActions.module.scss";
 import Button from '@mui/material/Button';
+import Grid from '@mui/material/Grid';
+
 
 export default function ProductActions({isLive, currency, buyAmount, bidAmount, onBuy, onBid}){
 
     return (
-        <div className={styles["product-auctions"]}>
+        <div className={styles["product-action"]}>
+        <Grid
+        container
+        spacing={0}
+        display="flex"
+        direction="row"
+        >
+          <Grid item xs={7} >
          <Button 
-         style={{backgroundColor: "#0C0C14", height: "12px"}}
+         style={{ height: "12px", paddingRight: "50px", paddingLeft: "50px"}}
          variant="contained"
-         disabled={!isLive}
-         xs={7} 
+         disabled={!isLive ? true : false}
          className={styles["button"]} 
          onClick={onBuy}
          >BUY FOR {buyAmount} {currency}</Button>
-         <Button xs={5} 
-         style={{background: "#0C0C14", height: "12px"}}   
+         </Grid>
+         <Grid item xs={5} >
+         <Button 
+         style={{backgroundColor: "lightgray", height: "12px"}}   
          variant="outlined"
-         disabled={isLive}
+         disabled={isLive ? false : true}
          className={styles["button"]} 
          onClick={onBid}
          color="success"
          >PLACE BID FOR {bidAmount} {currency}</Button>
+         </Grid>
+         </Grid>
         </div>
     )
 }

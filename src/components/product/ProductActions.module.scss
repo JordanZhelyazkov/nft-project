@@ -1,15 +1,17 @@
 
-.product-auctions {
-    display: flex;
-    width: 665px;
+.product-action {
     height: 104px;
     opacity: 0.5;
     padding-top: 20px;
     padding-bottom: 20px;
+    flex-basis: 0%;
+    width: 665px;
+ 
+    
 }
 
 .button {
     border-radius: 10px;
-    padding: 5px 10px;
+    float: right;
 }
 
