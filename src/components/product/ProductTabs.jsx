@@ -35,7 +35,8 @@ export default function ProductTabs({text, bids }){
     
 
     return(
-      <TabContext className={styles['product-tabs']} value={value}>
+      <div className={styles['product-tabs']}>
+      <TabContext  value={value}>
         <Box sx={{ borderBottom: 1}}>
           <TabList onChange={handleChange} >
             <Tab label="Details" value="1" className={styles["tab-details"]}/>
@@ -56,6 +57,6 @@ export default function ProductTabs({text, bids }){
             </TableBody>
         </TabPanel>
       </TabContext>
-      
+      </div>
     )
 }
