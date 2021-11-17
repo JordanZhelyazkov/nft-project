@@ -25,7 +25,7 @@ likes, auction_end, details, bids, source}){
         price={price} 
         currency={currency} 
         likes={likes} 
-        timeEnd={auction_end.timeEnd}/>
+        timeEnd={auction_end}/>
         
 
         <ProductTabs 
@@ -33,13 +33,12 @@ likes, auction_end, details, bids, source}){
         bids={bids}/>
      
         <ProductActions 
-        isLive={isLive}
+        isLive={source.isLive}
         currency={source.currency}
         buyAmount={source.buyAmount}
         bidAmount={source.bidAmount}
         onBuy={source.onBuy}
         onBid={source.onBid}
-        onTimeEnd={onTimeEnd}
         />
         </Grid>
         </Grid>
