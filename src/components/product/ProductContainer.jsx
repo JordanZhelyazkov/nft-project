@@ -3,7 +3,7 @@ import ProductImage from "./ProductImage";
 import ProductInfo from "./ProductInfo";
 import ProductTabs from "./ProductTabs";
 import ProductActions from "./ProductActions";
-import { Grid } from '@mui/material/Grid';
+import  Grid  from '@mui/material/Grid';
 
 
 export default function ProductContainer({name, owner, price, currency,
@@ -20,12 +20,13 @@ likes, auction_end, details, bids, source}){
         </Grid>
         <Grid item xs={5}>
         <ProductInfo 
-        title={name} 
-        creator={owner} 
-        price={price} 
-        currency={currency} 
-        likes={likes} 
-        timeEnd={auction_end}/>
+        // title={name} 
+        // creator={owner} 
+        // price={price} 
+        // currency={currency} 
+        // likes={likes} 
+        // timeEnd={auction_end}/>
+        {...source}/>
         
 
         <ProductTabs 
