@@ -18,7 +18,7 @@ likes, auction_end, details, bids, source}){
         <Grid item xs={6}>
         <ProductImage url="../public/images/nft.jpg"/>
         </Grid>
-        <Grid itemxs={5}>
+        <Grid item xs={5}>
         <ProductInfo 
         title={name} 
         creator={owner} 
