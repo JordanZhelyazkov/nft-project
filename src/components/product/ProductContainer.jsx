@@ -13,7 +13,8 @@ likes, auction_end, details, bids, source}){
         <div className={styles['product-container']}>
         <Grid 
         container
-        display="flex" >
+        display="flex"
+        direction="row" >
         <Grid item xs={6}>
         <ProductImage url="../public/images/nft.jpg"/>
         </Grid>
@@ -25,12 +26,14 @@ likes, auction_end, details, bids, source}){
         currency={currency} 
         likes={likes} 
         timeEnd={auction_end.timeEnd}/>
-        onTimeEnd={auction_end.onTimeEnd}
+        onTimeEnd={auction_end.timeEnd}
+
         <ProductTabs 
         text={details} 
         bids={bids}/>
+     
         <ProductActions 
-        isLive={true}
+        isLive="true"
         currency={source.currency}
         buyAmount={source.buyAmount}
         bidAmount={source.bidAmount}
