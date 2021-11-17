@@ -20,13 +20,14 @@ likes, auction_end, details, bids, source}){
         </Grid>
         <Grid item xs={5}>
         <ProductInfo 
-        // title={name} 
-        // creator={owner} 
-        // price={price} 
-        // currency={currency} 
-        // likes={likes} 
-        // timeEnd={auction_end}/>
-        {...source}/>
+        title={name} 
+        creator={owner} 
+        price={price} 
+        currency={currency} 
+        likes={likes} 
+        timeEnd={auction_end}
+        isLive={source.isLive}
+        onTimeEnd={source.onTimeEnd} />
         
 
         <ProductTabs 
