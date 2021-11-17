@@ -24,12 +24,13 @@ likes, auction_end, details, bids, source}){
         price={price} 
         currency={currency} 
         likes={likes} 
-        timeEnd={auction_end}/>
+        timeEnd={auction_end.timeEnd}/>
+        onTimeEnd={auction_end.onTimeEnd}
         <ProductTabs 
         text={details} 
         bids={bids}/>
         <ProductActions 
-        isLive={source.isLive}
+        isLive={true}
         currency={source.currency}
         buyAmount={source.buyAmount}
         bidAmount={source.bidAmount}
