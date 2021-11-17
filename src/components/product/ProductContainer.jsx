@@ -1,4 +1,4 @@
-import styles from "./ProductTabs.module.scss";
+import styles from "./ProductContainer.module.scss";
 import ProductImage from "./ProductImage";
 import ProductInfo from "./ProductInfo";
 import ProductTabs from "./ProductTabs";
@@ -15,7 +15,7 @@ likes, auction_end, details, bids, source}){
         container
         display="flex" >
         <Grid item xs={6}>
-        <ProductImage />
+        <ProductImage url="../public/images/nft.jpg"/>
         </Grid>
         <Grid itemxs={5}>
         <ProductInfo 
@@ -28,7 +28,14 @@ likes, auction_end, details, bids, source}){
         <ProductTabs 
         text={details} 
         bids={bids}/>
-        <ProductActions {...source}/>
+        <ProductActions 
+        isLive={source.isLive}
+        currency={source.currency}
+        buyAmount={source.buyAmount}
+        bidAmount={source.bidAmount}
+        onBuy={source.onBuy}
+        onBid={source.onBid}
+        />
         </Grid>
         </Grid>
         </div>
