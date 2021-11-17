@@ -3,7 +3,7 @@ import ProductImage from "./ProductImage";
 import ProductInfo from "./ProductInfo";
 import ProductTabs from "./ProductTabs";
 import ProductActions from "./ProductActions";
-import Grid from '@mui/material/Grid';
+import { Grid } from '@mui/material';
 
 
 export default function ProductContainer({name, owner, price, currency,
@@ -26,7 +26,7 @@ likes, auction_end, details, bids, source}){
         currency={currency} 
         likes={likes} 
         timeEnd={auction_end.timeEnd}/>
-        onTimeEnd={auction_end.timeEnd}
+        
 
         <ProductTabs 
         text={details} 
