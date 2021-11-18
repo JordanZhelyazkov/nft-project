@@ -35,8 +35,8 @@ likes, auction_end, details, bids, source}){
         bids={bids}/>
      
         <ProductActions 
-        isLive={true}
-        currency={currency}
+        isLive={source.isLive}
+        currency={source.currency}
         buyAmount={source.buyAmount}
         bidAmount={source.bidAmount}
         onBuy={source.onBuy}
