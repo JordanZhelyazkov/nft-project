@@ -1,4 +1,4 @@
-import Example from "../src/components/example/Example";
+
 import Header from "../src/components/header/Header";
 import Featured from "../src/components/featured/Featured";
 import Trending from "../src/components/trending/Trending";
@@ -11,8 +11,6 @@ import nftsData from "../public/data/nfts.json";
 import trendingData from "../public/data/trending.json";
 import usersData from "../public/data/users.json";
 import { useState, useEffect } from "react";
-
-import ProductContainer from "../src/components/product/ProductContainer";
 
 
 
@@ -36,9 +34,7 @@ useEffect(() => {
     <TopCollectors collectors={usersData.sort((a, b) => b - a)}/>
     <How />
     <Auctions cards={nftsData}/>
-    <ProductContainer />
     <Footer />
-    
     </div>
   )
 }
