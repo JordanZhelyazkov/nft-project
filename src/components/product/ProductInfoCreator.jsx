@@ -7,7 +7,7 @@ export default function ProductInfoCreator({name, avatar, verified=false}){
         <div className={styles["product-info-creator"]}>
          <label className={styles["title"]}>Creator</label>
             <div className={styles["user-container"]}>
-             <User name={name} avatar={avatar} verified={verified}/>
+             <User name={name} avatar={avatar.url} verified={verified}/>
             </div>
 
         </div>

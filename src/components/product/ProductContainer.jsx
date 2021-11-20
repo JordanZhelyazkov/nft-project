@@ -16,7 +16,7 @@ likes, auction_end, details, bids, source}){
         display="flex"
         direction="row" >
         <Grid item xs={6}>
-        <ProductImage url={"../public/images/nft.jpg"}/>
+        <ProductImage url={source.url}/>
         </Grid>
         <Grid item xs={5}>
         <ProductInfo 
@@ -27,7 +27,7 @@ likes, auction_end, details, bids, source}){
         likes={likes} 
         timeEnd={auction_end}
         isLive={true}
-        onTimeEnd={auction_end} />
+        />
         
 
         <ProductTabs 
@@ -35,12 +35,6 @@ likes, auction_end, details, bids, source}){
         bids={bids}/>
      
         <ProductActions 
-        isLive={source.isLive}
-        currency={source.currency}
-        buyAmount={source.buyAmount}
-        bidAmount={source.bidAmount}
-        onBuy={source.onBuy}
-        onBid={source.onBid}
         />
         </Grid>
         </Grid>
