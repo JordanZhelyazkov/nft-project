@@ -16,7 +16,7 @@ likes, auction_end, details, bids, source}){
         display="flex"
         direction="row" >
         <Grid item xs={6}>
-        <ProductImage url={source.url}/>
+        <ProductImage url={source}/>
         </Grid>
         <Grid item xs={5}>
         <ProductInfo 
@@ -26,7 +26,6 @@ likes, auction_end, details, bids, source}){
         currency={currency} 
         likes={likes} 
         timeEnd={auction_end}
-        isLive={true}
         />
         
 
