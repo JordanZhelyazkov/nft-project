@@ -9,29 +9,22 @@ import { useEffect, useState } from "react";
 
 export default function Product(){
 
-    //  const [idProduct, setIdProduct] = useState({});
+     const [idProduct, setIdProduct] = useState({});
+     const router = useRouter();
+     const { id } = router.query;
+    
+    useEffect(() => {
+       products.filter(el => el.id == id ? setIdProduct(el) : "")
+       
+    },[id])
+    
+    
 
-    // useEffect(() => {
-    //     products.filter(el => {
-    //         if(el.id == id){
-    //             setIdProduct(el)
-    //         }
-    //     })
-    // },[idProduct])
-    const router = useRouter();
-   const { id } = router.query;
-    let correctId;
-    products.filter(el => {
-                if(el.id == id){
-                    correctId = el;
-              }
-            })
-   
-  
+ 
     return (
      <Container maxWidth="sm">
          <Header />
-         <ProductContainer props={correctId}/>
+         <ProductContainer {...idProduct}/>
          <Footer />
      </Container>
     )
