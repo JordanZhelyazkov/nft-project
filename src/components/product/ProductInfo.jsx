@@ -23,8 +23,8 @@ export default function ProductInfo({
       <h1>
         <ProductInfoTitle text={title}></ProductInfoTitle>
       </h1>
-      <Stack className={styles["stats"]} direction="row" spacing={4}>
-        <ProductInfoPrice amount={price} currency={currency}>
+      <Stack className={styles["stats"]} direction="row" spacing={2}>
+      <ProductInfoPrice amount={price} currency={currency}>
         </ProductInfoPrice>
         <ProductInfoLikes amount={likes}></ProductInfoLikes>
       </Stack>

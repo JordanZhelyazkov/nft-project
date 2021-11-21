@@ -16,7 +16,7 @@ likes, auction_end, details, bids, source}){
         display="flex"
         direction="row" >
         <Grid item xs={6}>
-        <ProductImage url={source}/>
+        <ProductImage url={source?.url}/>
         </Grid>
         <Grid item xs={5}>
         <ProductInfo 
@@ -31,7 +31,7 @@ likes, auction_end, details, bids, source}){
 
         <ProductTabs 
         text={details} 
-        bids={[]}
+        bids={bids || []}
         />
      
         <ProductActions 

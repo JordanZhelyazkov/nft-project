@@ -6,7 +6,7 @@ export default function ProductInfoTitle({text}){
 
     return (
         <div className={styles["product-info-title"]}>
-        <Typography variant="h1" component="h1" className={styles["title"]}>
+        <Typography variant="h2" component="h2" className={styles["title"]}>
           {text}
         </Typography>
 

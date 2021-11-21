@@ -14,8 +14,9 @@ export default function Product(){
      const { id } = router.query;
     
     useEffect(() => {
-       products.filter(el => el.id == id ? setIdProduct(el) : "")
-       
+     
+       products.filter(el => el.id == id ? setIdProduct(el) : '')
+    
     },[id])
     
     
