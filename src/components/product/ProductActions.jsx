@@ -15,7 +15,7 @@ export default function ProductActions({isLive, currency, buyAmount, bidAmount, 
         >
           <Grid item xs={7} >
          <Button 
-         style={{ height: "12px", paddingRight: "50px", paddingLeft: "50px"}}
+         style={{background: "#4E24F2", height: "12px", paddingRight: "50px", paddingLeft: "50px"}}
          variant="contained"
          disabled={!isLive ? true : false}
          className={styles["button"]} 
@@ -24,7 +24,7 @@ export default function ProductActions({isLive, currency, buyAmount, bidAmount, 
          </Grid>
          <Grid item xs={5} >
          <Button 
-         style={{backgroundColor: "lightgray", height: "12px"}}   
+         style={{background: "#24F25E;", height: "12px"}}   
          variant="outlined"
          disabled={isLive ? false : true}
          className={styles["button"]} 

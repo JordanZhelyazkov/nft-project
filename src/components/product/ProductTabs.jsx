@@ -20,16 +20,16 @@ export default function ProductTabs({ text, bids }) {
     setValue(newValue);
   };
 
-  const dateFunc = (date) => {
-    formatDistance(subDays(date, 3), new Date(), { addSuffix: true });
-  };
+  // const dateFunc = (date) => {
+  //   formatDistance(subDays(date, 3), new Date(), { addSuffix: true });
+  // };
 
   const StyledTableRow = styled(TableRow)({
-    backgroundColor: "#4E24F2",
+    background: "rgba(78, 36, 242, 0.15)",
     width: "578px",
     height: "64px",
     "&:nth-of-type(even)": {
-      opacity: 0.15,
+      background: "rgba(78, 36, 242, 0.5)",
     },
   });
 
@@ -50,10 +50,10 @@ export default function ProductTabs({ text, bids }) {
                 <StyledTableRow
                   className={(styles["table-row"], `table-row-${i}`)}
                 >
-                  <TableCell>
+                  <TableCell >
                     <User {...bid.user} />
                   </TableCell>
-                  <TableCell>{bid.amount}</TableCell>
+                  <TableCell style={{color: "#24F25E"}}>{bid.amount} ETH</TableCell>
                   <TableCell>
                     {formatDistance(parseISO(bid.date, 3), new Date(), {
                       addSuffix: true,

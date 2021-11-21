@@ -1,20 +1,30 @@
 @use "../../styles/colors";
 
 div.product-info-timer {
-    top: 27.95%;
-bottom: 62.66%;
-height: 118px;
-width: 218px;
-    
+  top: 27.95%;
+  bottom: 62.66%;
+  border-radius: 15px;
+  // height: 118px;
+  // width: 218px;
 }
 
 div.timer {
-   font-size: 20px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18.6761px;
+  line-height: 37px;
+  color: #181828;
 }
 
 label.title {
-    background-color: colors.$info_main;
+  background-color: colors.$info_main;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+ 
 }
-.active{
-    background-color: colors.$secondary_main;
+.active {
+  background-color: colors.$secondary_main;
 }
