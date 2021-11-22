@@ -16,6 +16,7 @@ export default function Product(){
         products.filter(el => el.id == id ? setIdProduct(el) : "")
     }, [id])
 
+   
     return (
         <Container maxWidth="sm">
             <Header />

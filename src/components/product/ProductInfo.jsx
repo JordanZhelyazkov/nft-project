@@ -7,6 +7,7 @@ import ProductInfoCreator from "./ProductInfoCreator";
 import ProductInfoTimer from "./ProductInfoTimer";
 import Stack from "@mui/material/Stack";
 import Grid from "@mui/material/Grid";
+// import { useEffect } from "react";
 
 export default function ProductInfo({
   title,
@@ -18,6 +19,9 @@ export default function ProductInfo({
   timeEnd,
   isLive,
 }) {
+
+
+
   return (
     <div className={styles["product-info"]}>
       <h1>

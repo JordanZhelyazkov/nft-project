@@ -1,7 +1,10 @@
 import styles from "./ProductInfoCreator.module.scss";
 import User from "../user/User";
 
+
 export default function ProductInfoCreator({name, avatar, verified=false}){
+
+  
 
     return(
         <div className={styles["product-info-creator"]}>

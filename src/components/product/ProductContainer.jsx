@@ -4,10 +4,13 @@ import ProductInfo from "./ProductInfo";
 import ProductTabs from "./ProductTabs";
 import ProductActions from "./ProductActions";
 import  Grid  from '@mui/material/Grid';
+// import { useEffect } from "react";
 
 
 export default function ProductContainer({name, owner, price, currency,
 likes, auction_end, details, bids, source}){
+
+   
 
     return (
         <div className={styles['product-container']}>

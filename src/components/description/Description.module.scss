@@ -1,0 +1,40 @@
+@use "../../styles/colors";
+
+.description {
+    position: absolute;
+    width: 960px;
+    height: 839px;
+    left: 470px;
+    top: 308px;
+
+    background: colors.$background_paper;
+}
+
+.text {
+    position: absolute;
+    width: 818px;
+    height: 387px;
+    left: 536px;
+    top: 372px;
+
+    
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+ 
+    color: colors.$text_secondary;
+
+}
+
+.image {
+    position: absolute;
+    width: 818px;
+    height: 241px;
+    left: 536px;
+    top: 820px;
+    
+    background: rgba(0, 0, 0, 0.22);
+    border-radius: 15px;
+}
