@@ -1,0 +1,28 @@
+@use "../../styles/colors";
+
+.text {
+  position: absolute;
+  width: 517px;
+  height: 73px;
+  left: 702px;
+  top: 186px;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 73px;
+  text-align: center;
+  
+  color: colors.$text_primary;
+  
+}
+
+.hero {
+  position: absolute;
+  width: 1920px;
+  height: 420px;
+  left: 0px;
+  top: 0px;
+  background: colors.$primary_main;
+}
