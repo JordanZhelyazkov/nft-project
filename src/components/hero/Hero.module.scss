@@ -2,10 +2,11 @@
 
 .text {
   position: absolute;
-  width: 517px;
+  width: auto;
   height: 73px;
-  left: 702px;
-  top: 186px;
+  left: 33%;
+  top: 100px;
+ 
 
   font-family: Montserrat;
   font-style: normal;
@@ -13,7 +14,7 @@
   font-size: 60px;
   line-height: 73px;
   text-align: center;
-  
+
   color: colors.$text_primary;
   
 }
@@ -23,6 +24,6 @@
   width: 1920px;
   height: 420px;
   left: 0px;
-  top: 0px;
+  top: 60px;
   background: colors.$primary_main;
 }
