@@ -1,10 +1,11 @@
 
 .image {
-    border-radius: 130px;
+    width: 100%;
 }
 
 .profile-hero {
-    display: flex;
-    justify-content: center;
-    margin-top: 200px;
+    height: 300px;
+    position:fixed;
+    top: 0;
+    margin-top: 0;
 }
