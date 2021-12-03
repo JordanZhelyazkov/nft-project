@@ -18,7 +18,7 @@ export default function ProfileCollectionFilters({ filters }) {
                     <MenuItem value=""></MenuItem>
                 </Select>
 
-                <TextField  variant="standard" />
+                <TextField inputProps={{variant: "standard"}}  />
                 
            
         </div>
