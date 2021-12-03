@@ -5,7 +5,7 @@ import styles from "./ProfileCollectionFilters.module.scss";
 
 export default function ProfileCollectionFilters({ filters }) {
     const inputProps = {
-        variant: "standart"
+        variant: "standard"
       };
     return (
         <div className={classNames(styles['profile-collection-filters'])}>
