@@ -1,13 +1,15 @@
-import { FormControl, Select, InputLabel, MenuItem, Stack, InputAdornment, TextField, Search } from "@mui/material";
+import {  Select, InputLabel, MenuItem, TextField } from "@mui/material";
 import classNames from "classnames";
 import styles from "./ProfileCollectionFilters.module.scss";
-import SearchIcon from '@mui/icons-material/Search';
+
 
 export default function ProfileCollectionFilters({ filters }) {
-
+    const inputProps = {
+        variant: "standart"
+      };
     return (
         <div className={classNames(styles['profile-collection-filters'])}>
-            <FormControl>
+           
                 <InputLabel>Sort by</InputLabel>
                 <Select>
                     <MenuItem value=""></MenuItem>
@@ -18,21 +20,9 @@ export default function ProfileCollectionFilters({ filters }) {
                     <MenuItem value=""></MenuItem>
                 </Select>
 
-                {/* <TextField
-                    variant="standart"
-                    type="search"
-                    InputProps={{
-                        inputAdornment: (
-                            <InputAdornment>
-                            <Search >
-                                <SearchIcon />
-                            </Search>
-                            </InputAdornment>
-                        )
-                    }}
-                >
-                </TextField> */}
-            </FormControl>
+                <TextField  inputProps={inputProps}/>
+                
+           
         </div>
     )
 }
