@@ -4,9 +4,7 @@ import styles from "./ProfileCollectionFilters.module.scss";
 
 
 export default function ProfileCollectionFilters({ filters }) {
-    const inputProps = {
-        variant: "standard"
-      };
+    
     return (
         <div className={classNames(styles['profile-collection-filters'])}>
            
@@ -20,7 +18,7 @@ export default function ProfileCollectionFilters({ filters }) {
                     <MenuItem value=""></MenuItem>
                 </Select>
 
-                <TextField  inputProps={inputProps}/>
+                <TextField  InputProps={{variant: "standard"}}/>
                 
            
         </div>
