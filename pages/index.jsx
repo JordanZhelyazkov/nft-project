@@ -9,6 +9,7 @@ import Footer from "../src/components/footer/Footer";
 import featuredData from "../public/data/featured.json";
 import nftsData from "../public/data/nfts.json";
 import trendingData from "../public/data/trending.json";
+
 import usersData from "../public/data/users.json";
 import { useState, useEffect } from "react";
 
