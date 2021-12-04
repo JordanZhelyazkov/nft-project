@@ -1,5 +1,10 @@
+@use "../../styles/colors";
 .profile-collection-filters {
     display: flex;
     flex-direction: column;
     width: 100%;
+}
+
+.text-field {
+  background: colors.$background_paper;
 }
