@@ -24,7 +24,7 @@ export default function Profile(){
          <Header />
          <ProfileHero image={profilesData.avatar.backgroundUrl}/>
          <ProfileUser name={profilesData.username} info={profilesData.info} avatar={profilesData.avatar} verified={profilesData.verified}/>
-         <ProfileCollection   filters={...filtersData} items={profilesData.nfts}/>
+         <ProfileCollection   filters={filtersData} items={profilesData.nfts}/>
          <Footer />
         </div>
     )
