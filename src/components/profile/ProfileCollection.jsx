@@ -4,7 +4,7 @@ import {Grid, Container, Typography } from "@mui/material";
 import Card from "./../card/Card";
 import ProfileCollectionFilters from "./ProfileCollectionFilters";
 
-export default function ProfileCollection({user,filter,items}){
+export default function ProfileCollection({user,filters,items}){
      
     const cards = items.map((card, i) => <Grid item  xs={3}><Card key={i} name={card.name} 
     likes={card.likes} verified={card.verified} mediaUrl={card.url} price={card.price}
@@ -18,7 +18,7 @@ export default function ProfileCollection({user,filter,items}){
             <Typography variant="h3" >Collection</Typography>
            </Grid>
            <Grid item xs={9}>
-            <ProfileCollectionFilters filter={filter}/>
+            <ProfileCollectionFilters filters={filters}/>
            </Grid>
        </Grid>
        <Grid container>
