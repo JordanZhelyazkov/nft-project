@@ -3,7 +3,8 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import Grid from "@mui/material/Grid";
 import Link from "../../src/components/link/Link";
-// import ProfileCollectionFilters from "../../src/components/profile/ProfileCollectionFilters";
+// import ProfileCollection from "../../src/components/profile/ProfileCollection";
+// import profileJson from "./../../public/data/profile.json";
 
 export default function About() {
   return (
@@ -15,7 +16,8 @@ export default function About() {
           </Button>
         </Grid>
       </Grid>
-      {/* <ProfileCollectionFilters /> */}
+      {/* <ProfileCollection items = {profileJson.nfts} /> */}
+      
     </Container>
   );
 }
