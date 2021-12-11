@@ -1,10 +1,9 @@
-import Header from "../../../src/components/header/Header";
-import ProfileHero from "../../../src/components/profile/ProfileHero";
-import ProfileUser from "../../../src/components/profile/ProfileUser";
-import ProfileCollection from "../../../src/components/profile/ProfileCollection";
-import Footer from "../../../src/components/footer/Footer";
-import profilesData from "../../../public/data/profile.json";
-import filtersData from "../../../public/data/filtersProfile.json";
+import Header from "../../src/components/header/Header";
+import ProfileHero from "../../src/components/profile/ProfileHero";
+import ProfileUser from "../../src/components/profile/ProfileUser";
+import ProfileCollection from "../../src/components/profile/ProfileCollection";
+import Footer from "../../src/components/footer/Footer";
+import profilesData from "../../public/data/profile.json";
 import {useRouter} from "next/router";
 import {useEffect, useState} from "react";
 
@@ -24,7 +23,7 @@ export default function Profile(){
          <Header />
          <ProfileHero image={profilesData.avatar.backgroundUrl}/>
          <ProfileUser name={profilesData.username} info={profilesData.info} avatar={profilesData.avatar} verified={profilesData.verified}/>
-         <ProfileCollection   filters={filtersData} items={profilesData.nfts}/>
+         <ProfileCollection   items={profilesData.nfts}/>
          <Footer />
         </div>
     )
