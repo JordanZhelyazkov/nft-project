@@ -15,7 +15,7 @@ export default function Header() {
       <TextField 
         type="search"
         placeholder="Find items, users and activities"
-        style={{width: '80%'}}
+        style={{width: '60%', marginLeft: "5%", marginRight: "5%"}}
         InputProps={{
           startAdornment: (
             <IconButton>
@@ -25,13 +25,14 @@ export default function Header() {
         }}
       />
       <Grid 
+        style={{marginRight: "5%", marginLeft: "auto", textAlign: "right"}}
         container
         spacing={2}
         rowGap='2rem'
       >
-        <Grid item><Item>Home</Item></Grid>
-        <Grid item><Item>Activity</Item></Grid>
-        <Grid item><Item>EXPLORE</Item></Grid>
+        <Grid item xs={3}><Item>Home</Item></Grid>
+        <Grid item item xs={3}><Item>Activity</Item></Grid>
+        <Grid item item xs={3}><Item>EXPLORE</Item></Grid>
       </Grid>
     </div>
   );

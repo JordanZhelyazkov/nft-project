@@ -10,7 +10,7 @@ export default function ActivityListItem({ user, created_at, nft, type = "like" 
 
     return (
         <div className={classNames(styles['activity-item'])}>
-            <Avatar size="10px" url={user.avatarUrl} verified={user.verified} />
+            <Avatar url={user.avatarUrl} verified={user.verified} />
             <p>{user.name}{type === "like" ? "likes" : "bought"}<Link to={`nft/${nft.name}`}>{nft.name}</Link>
             <Link to={`nft/user/${nft.user.name}`}>{nft.user.name}</Link>
             </p>

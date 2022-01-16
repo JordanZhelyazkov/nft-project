@@ -15,9 +15,9 @@ export default function Footer({type}){
         spacing={2}
         rowGap='3rem'
       >
-        <Grid item><Item>BUM All Rights Reserved</Item></Grid>
-        <Grid item><Item>Privacy policy</Item></Grid>
-        <Grid item><Item>Cookie policy</Item></Grid>
+        <Grid item xs={3}><Item>BUM All Rights Reserved</Item></Grid>
+        <Grid item xs={3}><Item>Privacy policy</Item></Grid>
+        <Grid item xs={3}><Item>Cookie policy</Item></Grid>
       </Grid>
 </div>
     )

@@ -6,13 +6,13 @@
  
 .container {
     display: flex !important;
-    padding: 10px;
     align-items: center;
     justify-content: center;
     bottom: 0;
     right: 0;
     left: 0;
-    position: fixed;
+    position: sticky;
+    margin-top: 2%;
     background: #181828;
     margin-top: 0 auto;
   }
