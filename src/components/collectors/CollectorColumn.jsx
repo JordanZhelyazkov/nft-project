@@ -3,7 +3,7 @@ import Collector from "./Collector";
 
 export default function CollectorColumn({items}){
 
-    const mapItems = items.map((item, index) => <Collector name={item.name} 
+    const mapItems = items.map((item, index) => <Collector key={index} name={item.name} 
     nftsCount={item.nftsCount} 
     avatar={item.count}
     verified={item.verified}

@@ -5,7 +5,7 @@ export default function CollectorsColumn({items}){
 
     const mapItems = items.map((item, index) => <Collector name={item.name} 
     nftsCount={item.nftsCount} 
-    avatar={item.count}
+    avatar={item.avatar}
     verified={item.verified}
     id={index}/>)
     return(

@@ -13,8 +13,8 @@ export default function Featured({items = []}){
 
      <div className={classNames(styles.container)}>
          <ImageList  rows={2} cols={6}>
-             {items.map((item) => (
-                 <ImageListItem key={item.img} cols={item.cols || 1} rows={item.rows || 1} >
+             {items.map((item, index) => (
+                 <ImageListItem key={index} cols={item.cols || 1} rows={item.rows || 1} >
                      <img
                      onClick={() => router.push(item.href)}
                      src={item.image}

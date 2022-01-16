@@ -20,7 +20,7 @@ export default function Trending({cards=[]}){
   const handleChange = (event) => {
     setPeriod(event.target.value);
   };
-  const mappedCards = cards.map(({name,user,mediaUrl,price,currency}) => <Card name={name} avatarUrl={user}
+  const mappedCards = cards.map(({name,user,mediaUrl,price,currency}, index) => <Card key={index} name={name} avatarUrl={user}
   verified={user} mediaUrl={mediaUrl} price={price} currency={currency}/> )
   
   
